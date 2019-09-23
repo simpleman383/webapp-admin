@@ -4,7 +4,7 @@ import repository from '../../repository/users'
 const api = {
     saveUser: (req, res) => {      
 
-        const userdata = { 
+        const userdata = {
             ...req.body,
             creationDate: new Date,
             lastAccessDate: new Date
