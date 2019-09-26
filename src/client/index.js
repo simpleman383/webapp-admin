@@ -6,7 +6,7 @@ import { createStore, applyMiddleware, combineReducers } from 'redux'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 
-const store = createStore(combineReducers(), applyMiddleware(thunk));
+const store = createStore(combineReducers([]), applyMiddleware(thunk));
 
 hydrate(
 

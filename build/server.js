@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "dc4399ef14d855dde703";
+/******/ 	var hotCurrentHash = "c7f46d39542e3b53e3c5";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -744,7 +744,7 @@ module.exports =
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "http://localhost:3002/";
+/******/ 	__webpack_require__.p = "http://localhost:3001/";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
@@ -763,7 +763,7 @@ module.exports =
 /*! exports provided: client, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"client\":{\"js\":\"http://localhost:3002/static/js/bundle.js\"}}");
+module.exports = JSON.parse("{\"client\":{\"js\":\"http://localhost:3001/static/js/bundle.js\"}}");
 
 /***/ }),
 
@@ -954,7 +954,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom_Route__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom_Route__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom/Switch */ "react-router-dom/Switch");
 /* harmony import */ var react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Login__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Login */ "./src/client/Login.js");
+/* harmony import */ var _containers_test__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/test */ "./src/client/containers/test/index.js");
 var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\App.js";
 
 
@@ -970,17 +970,7 @@ var App = function App() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom_Route__WEBPACK_IMPORTED_MODULE_1___default.a, {
     exact: true,
     path: "/",
-    component: _Login__WEBPACK_IMPORTED_MODULE_3__["default"],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom_Route__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    exact: true,
-    path: "/error",
-    component: function component() {
-      return 'Error';
-    },
+    component: _containers_test__WEBPACK_IMPORTED_MODULE_3__["default"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -992,120 +982,211 @@ var App = function App() {
 
 /***/ }),
 
-/***/ "./src/client/Login.js":
-/*!*****************************!*\
-  !*** ./src/client/Login.js ***!
-  \*****************************/
+/***/ "./src/client/components/layout/fragment-layout/__fragment/index.js":
+/*!**************************************************************************!*\
+  !*** ./src/client/components/layout/fragment-layout/__fragment/index.js ***!
+  \**************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LoginForm; });
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "@babel/runtime/helpers/classCallCheck");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "@babel/runtime/helpers/createClass");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "@babel/runtime/helpers/possibleConstructorReturn");
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "@babel/runtime/helpers/getPrototypeOf");
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/layout/fragment-layout/__fragment/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\layout\\fragment-layout\\__fragment\\index.js";
 
 
 
-
-
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\Login.js";
-
-
-var LoginForm =
-/*#__PURE__*/
-function (_React$Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(LoginForm, _React$Component);
-
-  function LoginForm(props) {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, LoginForm);
-
-    return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(LoginForm).call(this, props));
-  }
-
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(LoginForm, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("form", {
-        method: "post",
-        target: "/admin/login",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("label", {
-        htmlFor: "username",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12
-        }
-      }, "Username"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", {
-        type: "text",
-        id: "username",
-        name: "username",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("label", {
-        htmlFor: "password",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        }
-      }, "Password"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", {
-        type: "password",
-        id: "password",
-        name: "password",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", {
-        type: "submit",
-        value: "Login",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        }
-      }));
+var Fragment = function Fragment(_ref) {
+  var children = _ref.children;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "fragment-layout__fragment",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
     }
-  }]);
+  }, children);
+};
 
-  return LoginForm;
-}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+/* harmony default export */ __webpack_exports__["default"] = (Fragment);
+
+/***/ }),
+
+/***/ "./src/client/components/layout/fragment-layout/__fragment/styles.scss":
+/*!*****************************************************************************!*\
+  !*** ./src/client/components/layout/fragment-layout/__fragment/styles.scss ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
 
+
+/***/ }),
+
+/***/ "./src/client/components/layout/fragment-layout/index.js":
+/*!***************************************************************!*\
+  !*** ./src/client/components/layout/fragment-layout/index.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fragment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./__fragment */ "./src/client/components/layout/fragment-layout/__fragment/index.js");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/layout/fragment-layout/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\layout\\fragment-layout\\index.js";
+
+
+
+
+var FragmentLayout = function FragmentLayout(_ref) {
+  var children = _ref.children;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "fragment-layout",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }, children);
+};
+
+FragmentLayout.Fragment = _fragment__WEBPACK_IMPORTED_MODULE_1__["default"];
+/* harmony default export */ __webpack_exports__["default"] = (FragmentLayout);
+
+/***/ }),
+
+/***/ "./src/client/components/layout/fragment-layout/styles.scss":
+/*!******************************************************************!*\
+  !*** ./src/client/components/layout/fragment-layout/styles.scss ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/client/components/layout/index.js":
+/*!***********************************************!*\
+  !*** ./src/client/components/layout/index.js ***!
+  \***********************************************/
+/*! exports provided: default, FragmentLayout, SingleViewLayout */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _fragment_layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fragment-layout */ "./src/client/components/layout/fragment-layout/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FragmentLayout", function() { return _fragment_layout__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _single_view_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./single-view-layout */ "./src/client/components/layout/single-view-layout/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SingleViewLayout", function() { return _single_view_layout__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+
+
+var Layout = {
+  Fragment: _fragment_layout__WEBPACK_IMPORTED_MODULE_0__["default"],
+  SingleView: _single_view_layout__WEBPACK_IMPORTED_MODULE_2__["default"]
+};
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+
+/***/ }),
+
+/***/ "./src/client/components/layout/single-view-layout/index.js":
+/*!******************************************************************!*\
+  !*** ./src/client/components/layout/single-view-layout/index.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return null;
+});
+
+/***/ }),
+
+/***/ "./src/client/components/page-layout/main-layout/index.js":
+/*!****************************************************************!*\
+  !*** ./src/client/components/page-layout/main-layout/index.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../layout */ "./src/client/components/layout/index.js");
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\page-layout\\main-layout\\index.js";
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var children = _ref.children;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layout__WEBPACK_IMPORTED_MODULE_1__["FragmentLayout"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layout__WEBPACK_IMPORTED_MODULE_1__["FragmentLayout"].Fragment.Vertical, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }, "\"Menu\""), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layout__WEBPACK_IMPORTED_MODULE_1__["FragmentLayout"].Fragment.Vertical, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }, children));
+});
+
+/***/ }),
+
+/***/ "./src/client/containers/test/index.js":
+/*!*********************************************!*\
+  !*** ./src/client/containers/test/index.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_page_layout_main_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/page-layout/main-layout */ "./src/client/components/page-layout/main-layout/index.js");
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\containers\\test\\index.js";
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_page_layout_main_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  }, "Test Block 1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }, "Test Block 2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    }
+  }, "Test Block 3"));
+});
 
 /***/ }),
 
@@ -1126,7 +1207,7 @@ var app = __webpack_require__(/*! ./server */ "./src/server/index.js")["default"
 
 var server = http__WEBPACK_IMPORTED_MODULE_0___default.a.createServer(app);
 var currentApp = app;
-server.listen("3001" || false, function (error) {
+server.listen("3000" || false, function (error) {
   if (error) {
     console.log(error);
   }
@@ -1937,28 +2018,6 @@ module.exports = __webpack_require__(/*! C:\Users\simpl\OneDrive\Докумен�
 
 /***/ }),
 
-/***/ "@babel/runtime/helpers/classCallCheck":
-/*!********************************************************!*\
-  !*** external "@babel/runtime/helpers/classCallCheck" ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/classCallCheck");
-
-/***/ }),
-
-/***/ "@babel/runtime/helpers/createClass":
-/*!*****************************************************!*\
-  !*** external "@babel/runtime/helpers/createClass" ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/createClass");
-
-/***/ }),
-
 /***/ "@babel/runtime/helpers/defineProperty":
 /*!********************************************************!*\
   !*** external "@babel/runtime/helpers/defineProperty" ***!
@@ -1967,39 +2026,6 @@ module.exports = require("@babel/runtime/helpers/createClass");
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/defineProperty");
-
-/***/ }),
-
-/***/ "@babel/runtime/helpers/getPrototypeOf":
-/*!********************************************************!*\
-  !*** external "@babel/runtime/helpers/getPrototypeOf" ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/getPrototypeOf");
-
-/***/ }),
-
-/***/ "@babel/runtime/helpers/inherits":
-/*!**************************************************!*\
-  !*** external "@babel/runtime/helpers/inherits" ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/inherits");
-
-/***/ }),
-
-/***/ "@babel/runtime/helpers/possibleConstructorReturn":
-/*!*******************************************************************!*\
-  !*** external "@babel/runtime/helpers/possibleConstructorReturn" ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/possibleConstructorReturn");
 
 /***/ }),
 
