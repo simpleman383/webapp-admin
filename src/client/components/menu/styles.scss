@@ -1,0 +1,37 @@
+@import '../../styles/index.scss';
+
+.menu {
+    background: url('../../images/menu-bg.png') bottom;
+    background-color: #000121;
+    height: 100%;
+
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+
+}
+
+.menu__side-bg {
+    background: url('../../images/side-bg.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    background-size: cover;
+
+    height: 100%;
+    width: 21.4%;
+    position: absolute;
+    right: 0;
+
+    @include for_smartphone {
+        display: none;
+    }
+
+}
+
+.menu__nav {
+    margin-top: 2em;
+    text-align: right;
+}

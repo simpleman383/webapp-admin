@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "c7f46d39542e3b53e3c5";
+/******/ 	var hotCurrentHash = "f9e059b04d6f185499a1";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -760,10 +760,10 @@ module.exports =
 /*!***************************!*\
   !*** ./build/assets.json ***!
   \***************************/
-/*! exports provided: client, default */
+/*! exports provided: client, , default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"client\":{\"js\":\"http://localhost:3001/static/js/bundle.js\"}}");
+module.exports = JSON.parse("{\"client\":{\"js\":\"http://localhost:3001/static/js/bundle.js\"},\"\":{\"woff\":[\"http://localhost:3001/static/media/Roboto-Bold.08cb8f79.woff\",\"http://localhost:3001/static/media/Roboto-Light.10ad0f86.woff\",\"http://localhost:3001/static/media/Roboto-Regular.94dac78e.woff\"],\"ttf\":[\"http://localhost:3001/static/media/Roboto-Bold.16d7bb99.ttf\",\"http://localhost:3001/static/media/Roboto-Light.2382fa8a.ttf\",\"http://localhost:3001/static/media/Roboto-Regular.4312f1fb.ttf\"],\"eot\":[\"http://localhost:3001/static/media/Roboto-Bold.4a1d8c27.eot\",\"http://localhost:3001/static/media/Roboto-Light.35d85034.eot\",\"http://localhost:3001/static/media/Roboto-Regular.b9077621.eot\"]}}");
 
 /***/ }),
 
@@ -954,8 +954,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom_Route__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom_Route__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom/Switch */ "react-router-dom/Switch");
 /* harmony import */ var react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _containers_test__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/test */ "./src/client/containers/test/index.js");
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\App.js";
+/* harmony import */ var _containers_dashboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/dashboard */ "./src/client/containers/dashboard/index.js");
+/* harmony import */ var _containers_glossary__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./containers/glossary */ "./src/client/containers/glossary/index.js");
+/* harmony import */ var _fonts_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./fonts.scss */ "./src/client/fonts.scss");
+/* harmony import */ var _fonts_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fonts_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.scss */ "./src/client/app.scss");
+/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_app_scss__WEBPACK_IMPORTED_MODULE_6__);
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\App.js";
+
+
+
 
 
 
@@ -965,15 +973,23 @@ var App = function App() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 17
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom_Route__WEBPACK_IMPORTED_MODULE_1___default.a, {
     exact: true,
     path: "/",
-    component: _containers_test__WEBPACK_IMPORTED_MODULE_3__["default"],
+    component: _containers_dashboard__WEBPACK_IMPORTED_MODULE_3__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 19
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom_Route__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    exact: true,
+    path: "/glossary",
+    component: _containers_glossary__WEBPACK_IMPORTED_MODULE_4__["default"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
     }
   }));
 };
@@ -982,88 +998,10 @@ var App = function App() {
 
 /***/ }),
 
-/***/ "./src/client/components/layout/fragment-layout/__fragment/index.js":
-/*!**************************************************************************!*\
-  !*** ./src/client/components/layout/fragment-layout/__fragment/index.js ***!
-  \**************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/layout/fragment-layout/__fragment/styles.scss");
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\layout\\fragment-layout\\__fragment\\index.js";
-
-
-
-var Fragment = function Fragment(_ref) {
-  var children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "fragment-layout__fragment",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  }, children);
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Fragment);
-
-/***/ }),
-
-/***/ "./src/client/components/layout/fragment-layout/__fragment/styles.scss":
-/*!*****************************************************************************!*\
-  !*** ./src/client/components/layout/fragment-layout/__fragment/styles.scss ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./src/client/components/layout/fragment-layout/index.js":
-/*!***************************************************************!*\
-  !*** ./src/client/components/layout/fragment-layout/index.js ***!
-  \***************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _fragment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./__fragment */ "./src/client/components/layout/fragment-layout/__fragment/index.js");
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/layout/fragment-layout/styles.scss");
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\layout\\fragment-layout\\index.js";
-
-
-
-
-var FragmentLayout = function FragmentLayout(_ref) {
-  var children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "fragment-layout",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  }, children);
-};
-
-FragmentLayout.Fragment = _fragment__WEBPACK_IMPORTED_MODULE_1__["default"];
-/* harmony default export */ __webpack_exports__["default"] = (FragmentLayout);
-
-/***/ }),
-
-/***/ "./src/client/components/layout/fragment-layout/styles.scss":
-/*!******************************************************************!*\
-  !*** ./src/client/components/layout/fragment-layout/styles.scss ***!
-  \******************************************************************/
+/***/ "./src/client/app.scss":
+/*!*****************************!*\
+  !*** ./src/client/app.scss ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1075,47 +1013,88 @@ FragmentLayout.Fragment = _fragment__WEBPACK_IMPORTED_MODULE_1__["default"];
 /*!***********************************************!*\
   !*** ./src/client/components/layout/index.js ***!
   \***********************************************/
-/*! exports provided: default, FragmentLayout, SingleViewLayout */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _fragment_layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fragment-layout */ "./src/client/components/layout/fragment-layout/index.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FragmentLayout", function() { return _fragment_layout__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-/* harmony import */ var _single_view_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./single-view-layout */ "./src/client/components/layout/single-view-layout/index.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SingleViewLayout", function() { return _single_view_layout__WEBPACK_IMPORTED_MODULE_2__["default"]; });
-
-
-
-var Layout = {
-  Fragment: _fragment_layout__WEBPACK_IMPORTED_MODULE_0__["default"],
-  SingleView: _single_view_layout__WEBPACK_IMPORTED_MODULE_2__["default"]
-};
-/* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-
-/***/ }),
-
-/***/ "./src/client/components/layout/single-view-layout/index.js":
-/*!******************************************************************!*\
-  !*** ./src/client/components/layout/single-view-layout/index.js ***!
-  \******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return null;
-});
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "@babel/runtime/helpers/slicedToArray");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../menu */ "./src/client/components/menu/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/layout/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_4__);
+
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\layout\\index.js";
+
+
+
+
+
+var Layout = function Layout(_ref) {
+  var children = _ref.children,
+      showSidebar = _ref.showSidebar;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
+      state = _useState2[0],
+      setState = _useState2[1];
+
+  var layoutModifier = !state ? 'layout--side-view-enabled' : 'layout--side-view-disabled';
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()('layout', layoutModifier),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "layout__side-view",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_menu__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    }
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "layout__main-view",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "layout__container-main",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    }
+  }, children)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
 
 /***/ }),
 
-/***/ "./src/client/components/page-layout/main-layout/index.js":
-/*!****************************************************************!*\
-  !*** ./src/client/components/page-layout/main-layout/index.js ***!
-  \****************************************************************/
+/***/ "./src/client/components/layout/styles.scss":
+/*!**************************************************!*\
+  !*** ./src/client/components/layout/styles.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/client/components/menu/__link/index.js":
+/*!****************************************************!*\
+  !*** ./src/client/components/menu/__link/index.js ***!
+  \****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1123,35 +1102,161 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../layout */ "./src/client/components/layout/index.js");
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\page-layout\\main-layout\\index.js";
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/__link/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\menu\\__link\\index.js";
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layout__WEBPACK_IMPORTED_MODULE_1__["FragmentLayout"], {
+  var to = _ref.to,
+      text = _ref.text;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "menu__item",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layout__WEBPACK_IMPORTED_MODULE_1__["FragmentLayout"].Fragment.Vertical, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+    className: "menu__link",
+    exact: true,
+    to: to,
+    activeClassName: "menu__link--active",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     }
-  }, "\"Menu\""), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layout__WEBPACK_IMPORTED_MODULE_1__["FragmentLayout"].Fragment.Vertical, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    }
-  }, children));
+  }, text));
 });
 
 /***/ }),
 
-/***/ "./src/client/containers/test/index.js":
+/***/ "./src/client/components/menu/__link/styles.scss":
+/*!*******************************************************!*\
+  !*** ./src/client/components/menu/__link/styles.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/client/components/menu/__logo/index.js":
+/*!****************************************************!*\
+  !*** ./src/client/components/menu/__logo/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/__logo/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\menu\\__logo\\index.js";
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "menu__logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    viewBox: "0 0 134 45",
+    className: "menu__logo-svg",
+    xmlns: "http://www.w3.org/2000/svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }, "\u0418\u043D\u0442\u0435\u0440\u043D\u0435\u0442-\u044D\u043A\u0432\u0430\u0439\u0440\u0438\u043D\u0433 Payture"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    "fill-rule": "evenodd",
+    style: {
+      fill: "rgb(255, 255, 255)"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M47.06,185.37a10.81,10.81,0,0,1,.07,3.48,8,8,0,0,1-1.07,3,7.17,7.17,0,0,1-2.28,2.29,9.5,9.5,0,0,1-3.55,1.31l-4.11.72L38,206.95l-4.59.81-4.95-28,8.46-1.49a11.38,11.38,0,0,1,3.64-.1,7.29,7.29,0,0,1,3,1.12,7.11,7.11,0,0,1,2.21,2.39A11.25,11.25,0,0,1,47.06,185.37Zm-4.57.7a4.64,4.64,0,0,0-1.57-3,4,4,0,0,0-3.26-.56l-3.83.68,1.53,8.66,3.87-.68a3.8,3.8,0,0,0,2.83-1.72A4.9,4.9,0,0,0,42.49,186.07Z",
+    transform: "translate(-28.48 -170.81)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M58.39,208.51l-7.78-1.37q-0.15.35-.54,1.15T49.26,210l-0.8,1.73q-0.37.81-.56,1.15L43.1,212l13-26.62,4.43,0.78,3.19,29.49-4.88-.86Zm-3.6-10.69-2.45,5.39,5.72,1-0.42-5.85q0-.38,0-1.26t-0.09-1.84q-0.06-1-.11-1.83a10.72,10.72,0,0,1,0-1.23l-0.2,0Z",
+    transform: "translate(-28.48 -170.81)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M69.12,184.2q0.2-1.45.45-2.86t0.49-2.87l1.34-6.8,4.88-.86L72.1,188.66l2,11.45-4.51.8-2-11.45-10-15.39,5-.88q0.9,1.55,1.8,3t1.76,3l1.38,2.5,1.38,2.5Z",
+    transform: "translate(-28.48 -170.81)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M89.13,183.89l-4.21,23.86-4.59-.81,4.21-23.86L78.37,182l0.74-4.19,17,3L95.34,185Z",
+    transform: "translate(-28.48 -170.81)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M112.5,185.71l3.45,19.55a10.3,10.3,0,0,1,0,3.76,7.75,7.75,0,0,1-1.29,3.07,8,8,0,0,1-2.41,2.21,10.6,10.6,0,0,1-7.29,1.18,7.62,7.62,0,0,1-3-1.44,8.23,8.23,0,0,1-2.11-2.56,11.12,11.12,0,0,1-1.16-3.39l-3.41-19.34,4.59-.81,3.43,19.47a4.9,4.9,0,0,0,1.57,2.92,3.71,3.71,0,0,0,3.27.75,3.85,3.85,0,0,0,2.61-1.6,4.12,4.12,0,0,0,.58-3.2l-3.48-19.75Z",
+    transform: "translate(-28.48 -170.81)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M130.2,201.13l-2.13-12.43-3.59-.63-2.06,11.69-4.59-.81,4.95-28,9,1.59a10.17,10.17,0,0,1,3.14,1.07,6.8,6.8,0,0,1,3.52,4.78,9.6,9.6,0,0,1,0,3.63,9.1,9.1,0,0,1-1.94,4.4,7.3,7.3,0,0,1-3.86,2.35l2.6,13.3Zm3.73-20a3.9,3.9,0,0,0-.49-3.1,4.15,4.15,0,0,0-2.73-1.46l-4.07-.72-1.41,8,4,0.71a4,4,0,0,0,3.07-.54A4.23,4.23,0,0,0,133.93,181.18Z",
+    transform: "translate(-28.48 -170.81)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M146.49,208.53l-4.95-28,15.6-2.75L157.9,182l-11,1.94,1.32,7.5,9.47-1.67,0.74,4.19L149,195.63l1.36,7.74,11-1.94,0.77,4.35Z",
+    transform: "translate(-28.48 -170.81)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }))));
+});
+
+/***/ }),
+
+/***/ "./src/client/components/menu/__logo/styles.scss":
+/*!*******************************************************!*\
+  !*** ./src/client/components/menu/__logo/styles.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/client/components/menu/index.js":
 /*!*********************************************!*\
-  !*** ./src/client/containers/test/index.js ***!
+  !*** ./src/client/components/menu/index.js ***!
   \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1160,12 +1265,89 @@ var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_page_layout_main_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/page-layout/main-layout */ "./src/client/components/page-layout/main-layout/index.js");
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\containers\\test\\index.js";
+/* harmony import */ var _logo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./__logo */ "./src/client/components/menu/__logo/index.js");
+/* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./__link */ "./src/client/components/menu/__link/index.js");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\menu\\index.js";
+
+
+
+
+
+var Menu = function Menu(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "menu",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "menu__side-bg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_logo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    className: "menu__nav",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    to: "/",
+    text: "\u0413\u043B\u0430\u0432\u043D\u0430\u044F",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    to: "/glossary",
+    text: "\u0413\u043B\u043E\u0441\u0441\u0430\u0440\u0438\u0439",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Menu);
+
+/***/ }),
+
+/***/ "./src/client/components/menu/styles.scss":
+/*!************************************************!*\
+  !*** ./src/client/components/menu/styles.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/client/containers/dashboard/index.js":
+/*!**************************************************!*\
+  !*** ./src/client/containers/dashboard/index.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/layout */ "./src/client/components/layout/index.js");
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\containers\\dashboard\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_page_layout_main_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -1175,18 +1357,50 @@ var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u
       fileName: _jsxFileName,
       lineNumber: 9
     }
-  }, "Test Block 1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    }
-  }, "Test Block 2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    }
-  }, "Test Block 3"));
+  }, "Dashboard"));
 });
+
+/***/ }),
+
+/***/ "./src/client/containers/glossary/index.js":
+/*!*************************************************!*\
+  !*** ./src/client/containers/glossary/index.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/layout */ "./src/client/components/layout/index.js");
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\containers\\glossary\\index.js";
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  }, "Glossary"));
+});
+
+/***/ }),
+
+/***/ "./src/client/fonts.scss":
+/*!*******************************!*\
+  !*** ./src/client/fonts.scss ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -1626,7 +1840,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./routes */ "./src/server/routes/index.js");
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-dom/server */ "react-dom/server");
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\server\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\server\\index.js";
 
 
 
@@ -1637,7 +1851,7 @@ var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u
 var assets = __webpack_require__(/*! ./build/assets.json */ "./build/assets.json");
 
 var server = express__WEBPACK_IMPORTED_MODULE_3___default()();
-server.disable('x-powered-by').use(express__WEBPACK_IMPORTED_MODULE_3___default.a["static"]("C:\\Users\\simpl\\OneDrive\\Документы\\Node JS Projects\\webapp-admin\\public")).use(_routes__WEBPACK_IMPORTED_MODULE_4__["default"]).get('/*', function (req, res) {
+server.disable('x-powered-by').use(express__WEBPACK_IMPORTED_MODULE_3___default.a["static"]("C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\public")).use(_routes__WEBPACK_IMPORTED_MODULE_4__["default"]).get('/*', function (req, res) {
   var context = {};
   var markup = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_5__["renderToString"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["StaticRouter"], {
     context: context,
@@ -2013,7 +2227,7 @@ var response = {
 
 __webpack_require__(/*! razzle-dev-utils/prettyNodeErrors */"razzle-dev-utils/prettyNodeErrors");
 __webpack_require__(/*! webpack/hot/poll?300 */"./node_modules/webpack/hot/poll.js?300");
-module.exports = __webpack_require__(/*! C:\Users\simpl\OneDrive\Документы\Node JS Projects\webapp-admin\src */"./src/index.js");
+module.exports = __webpack_require__(/*! C:\Users\simpl\Documents\Node Projects\webapp-admin\src */"./src/index.js");
 
 
 /***/ }),
@@ -2029,6 +2243,17 @@ module.exports = require("@babel/runtime/helpers/defineProperty");
 
 /***/ }),
 
+/***/ "@babel/runtime/helpers/slicedToArray":
+/*!*******************************************************!*\
+  !*** external "@babel/runtime/helpers/slicedToArray" ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/slicedToArray");
+
+/***/ }),
+
 /***/ "body-parser":
 /*!******************************!*\
   !*** external "body-parser" ***!
@@ -2037,6 +2262,17 @@ module.exports = require("@babel/runtime/helpers/defineProperty");
 /***/ (function(module, exports) {
 
 module.exports = require("body-parser");
+
+/***/ }),
+
+/***/ "classnames":
+/*!*****************************!*\
+  !*** external "classnames" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("classnames");
 
 /***/ }),
 

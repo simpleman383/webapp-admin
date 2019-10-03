@@ -1,0 +1,174 @@
+@import '../../styles/index.scss';
+
+.layout {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.layout__side-view {
+    position: fixed;
+    height: 120%;
+    z-index: 999;
+    transition: all .2s ease;
+}
+
+.layout__main-view {
+    position: relative;
+    height: 100%;
+    transition: all .2s ease;
+
+
+
+}
+
+$side-view_size_shown: (
+    'smartphone': 100%,
+    'tablet_portrait': 250px,
+    'tablet_landscape': 300px,
+    'laptop': 250px,
+    'desktop': 300px
+);
+
+.layout--side-view-enabled {
+
+    .layout__side-view {
+
+        @include for_desktop { 
+            width: map-get($side-view_size_shown, 'desktop'); 
+        }
+
+        @include for_laptop { 
+            width: map-get($side-view_size_shown, 'laptop'); 
+        }
+
+
+        @include for_tablet_landscape { 
+            width: map-get($side-view_size_shown, 'tablet_landscape'); 
+        }
+
+
+        @include for_tablet_portrait { 
+            width: map-get($side-view_size_shown, 'tablet_portrait'); 
+        }
+
+        @include for_smartphone { 
+            width: map-get($side-view_size_shown, 'smartphone');
+            left: 0%;
+        }
+
+    }
+
+    .layout__main-view {
+        @include for_desktop { 
+            margin-left: map-get($side-view_size_shown, 'desktop'); 
+        }
+
+        @include for_laptop { 
+            margin-left: map-get($side-view_size_shown, 'laptop'); 
+        }
+
+
+        @include for_tablet_landscape { 
+            margin-left: map-get($side-view_size_shown, 'tablet_landscape'); 
+        }
+
+
+        @include for_tablet_portrait { 
+            margin-left: map-get($side-view_size_shown, 'tablet_portrait'); 
+        }
+
+        @include for_smartphone { 
+            margin-left: 0; 
+        }
+    }
+}
+
+
+
+$side-view_size_collapsed: (
+    'smartphone': 100%,
+    'tablet_portrait': 50px,
+    'tablet_landscape': 60px,
+    'laptop': 70px,
+    'desktop': 70px
+);
+
+
+.layout--side-view-disabled {
+    .layout__side-view {
+
+        @include for_desktop { 
+            width: map-get($side-view_size_collapsed, 'desktop'); 
+        }
+
+        @include for_laptop { 
+            width: map-get($side-view_size_collapsed, 'laptop'); 
+        }
+
+
+        @include for_tablet_landscape { 
+            width: map-get($side-view_size_collapsed, 'tablet_landscape'); 
+        }
+
+
+        @include for_tablet_portrait { 
+            width: map-get($side-view_size_collapsed, 'tablet_portrait'); 
+        }
+
+        @include for_smartphone { 
+            width: map-get($side-view_size_collapsed, 'smartphone'); 
+            left: -100%;
+        }
+
+    }
+
+    .layout__main-view {
+        @include for_desktop { 
+            margin-left: map-get($side-view_size_collapsed, 'desktop'); 
+        }
+
+        @include for_laptop { 
+            margin-left: map-get($side-view_size_collapsed, 'laptop'); 
+        }
+
+
+        @include for_tablet_landscape { 
+            margin-left: map-get($side-view_size_collapsed, 'tablet_landscape'); 
+        }
+
+
+        @include for_tablet_portrait { 
+            margin-left: map-get($side-view_size_collapsed, 'tablet_portrait'); 
+        }
+
+        @include for_smartphone { 
+            margin-left: 0; 
+        }
+    }
+}
+
+
+.layout__container-main {
+    margin: 0 auto;
+    padding: 1em 0;
+
+    width: 90%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

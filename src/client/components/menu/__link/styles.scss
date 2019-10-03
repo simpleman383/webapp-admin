@@ -1,0 +1,30 @@
+.menu__item {
+    text-align: center;
+
+    width: fit-content;
+    margin: 1.5em auto;
+
+    cursor: pointer;
+}
+
+.menu__link {
+    font-family: Roboto;
+    color: white;
+    font-size: 1.125em;
+    text-decoration: none;
+    transition: all .2s ease;
+    display: block;
+    padding: .75em 0;
+    border-bottom: 4px solid transparent;
+
+}
+
+.menu__link--active {
+    border-bottom: 4px solid #fc6a42;
+}
+
+.layout--side-view-disabled {
+    
+
+
+}

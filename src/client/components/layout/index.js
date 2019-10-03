@@ -1,11 +1,27 @@
-import FragmentLayout from './fragment-layout'
-import SingleViewLayout from './single-view-layout'
+import React, { useState } from 'react'
+import Menu from '../menu'
+import cls from 'classnames'
 
-const Layout = {
-    Fragment: FragmentLayout,
-    SingleView: SingleViewLayout,
+import './styles.scss'
+
+
+const Layout = ({ children, showSidebar }) => {
+
+    const [state, setState] = useState(false)
+
+    let layoutModifier = !state ? 'layout--side-view-enabled' : 'layout--side-view-disabled'
+
+    return (
+        <div className={cls('layout', layoutModifier)}>
+            <div className='layout__side-view'>
+                <Menu />
+            </div>
+            <div className='layout__main-view'>
+                <div className='layout__container-main'>{children}</div>
+            </div>
+        </div>
+    )
 }
 
 
 export default Layout
-export { FragmentLayout, SingleViewLayout }
