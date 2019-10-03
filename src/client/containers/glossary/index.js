@@ -1,12 +1,18 @@
 import React from 'react'
 
-import Layout from '../../components/layout'
+
+import Input from '../../components/input'
+
 
 export default (props) => {
 
     return (
-        <Layout>
-            <h1>Glossary</h1>
-        </Layout>
+        <div className='glossary'>
+            
+            <Input className='glossary__input' />
+
+
+        </div>
+
     )
 }

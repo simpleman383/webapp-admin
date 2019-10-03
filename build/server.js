@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "f9e059b04d6f185499a1";
+/******/ 	var hotCurrentHash = "856c9ff0d2c2ce410707";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -763,7 +763,7 @@ module.exports =
 /*! exports provided: client, , default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"client\":{\"js\":\"http://localhost:3001/static/js/bundle.js\"},\"\":{\"woff\":[\"http://localhost:3001/static/media/Roboto-Bold.08cb8f79.woff\",\"http://localhost:3001/static/media/Roboto-Light.10ad0f86.woff\",\"http://localhost:3001/static/media/Roboto-Regular.94dac78e.woff\"],\"ttf\":[\"http://localhost:3001/static/media/Roboto-Bold.16d7bb99.ttf\",\"http://localhost:3001/static/media/Roboto-Light.2382fa8a.ttf\",\"http://localhost:3001/static/media/Roboto-Regular.4312f1fb.ttf\"],\"eot\":[\"http://localhost:3001/static/media/Roboto-Bold.4a1d8c27.eot\",\"http://localhost:3001/static/media/Roboto-Light.35d85034.eot\",\"http://localhost:3001/static/media/Roboto-Regular.b9077621.eot\"]}}");
+module.exports = JSON.parse("{\"client\":{\"js\":\"http://localhost:3001/static/js/bundle.js\"},\"\":{\"woff\":[\"http://localhost:3001/static/media/Roboto-Bold.08cb8f79.woff\",\"http://localhost:3001/static/media/Roboto-Light.10ad0f86.woff\",\"http://localhost:3001/static/media/Roboto-Regular.94dac78e.woff\"],\"ttf\":[\"http://localhost:3001/static/media/Roboto-Bold.16d7bb99.ttf\",\"http://localhost:3001/static/media/Roboto-Light.2382fa8a.ttf\",\"http://localhost:3001/static/media/Roboto-Regular.4312f1fb.ttf\"],\"eot\":[\"http://localhost:3001/static/media/Roboto-Bold.4a1d8c27.eot\",\"http://localhost:3001/static/media/Roboto-Light.35d85034.eot\",\"http://localhost:3001/static/media/Roboto-Regular.b9077621.eot\"],\"png\":\"http://localhost:3001/static/media/menu-bg.837f662d.png\"}}");
 
 /***/ }),
 
@@ -956,11 +956,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _containers_dashboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/dashboard */ "./src/client/containers/dashboard/index.js");
 /* harmony import */ var _containers_glossary__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./containers/glossary */ "./src/client/containers/glossary/index.js");
-/* harmony import */ var _fonts_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./fonts.scss */ "./src/client/fonts.scss");
-/* harmony import */ var _fonts_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fonts_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.scss */ "./src/client/app.scss");
-/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_app_scss__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\App.js";
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/layout */ "./src/client/components/layout/index.js");
+/* harmony import */ var _styles_fonts_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/fonts.scss */ "./src/client/styles/fonts.scss");
+/* harmony import */ var _styles_fonts_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_fonts_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _styles_app_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./styles/app.scss */ "./src/client/styles/app.scss");
+/* harmony import */ var _styles_app_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_app_scss__WEBPACK_IMPORTED_MODULE_7__);
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\App.js";
+
 
 
 
@@ -970,7 +972,12 @@ var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\sr
 
 
 var App = function App() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -981,7 +988,7 @@ var App = function App() {
     component: _containers_dashboard__WEBPACK_IMPORTED_MODULE_3__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom_Route__WEBPACK_IMPORTED_MODULE_1___default.a, {
     exact: true,
@@ -989,19 +996,73 @@ var App = function App() {
     component: _containers_glossary__WEBPACK_IMPORTED_MODULE_4__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 19
     }
-  }));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
 
 /***/ }),
 
-/***/ "./src/client/app.scss":
-/*!*****************************!*\
-  !*** ./src/client/app.scss ***!
-  \*****************************/
+/***/ "./src/client/components/input/index.js":
+/*!**********************************************!*\
+  !*** ./src/client/components/input/index.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "@babel/runtime/helpers/extends");
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/input/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_3__);
+
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\input\\index.js";
+
+
+
+var Type = {
+  Warning: 'warning',
+  Error: 'error'
+};
+/* harmony default export */ __webpack_exports__["default"] = (function (props) {
+  var status = props.status;
+  var modifier = '';
+
+  switch (status) {
+    case Type.Warning:
+      modifier = 'input--warning';
+      break;
+
+    case Type.Error:
+      modifier = 'input--error';
+      break;
+
+    default:
+      break;
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, props, {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('input', props.className, modifier),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    }
+  }));
+});
+
+/***/ }),
+
+/***/ "./src/client/components/input/styles.scss":
+/*!*************************************************!*\
+  !*** ./src/client/components/input/styles.scss ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1028,22 +1089,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/layout/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_4__);
 
-var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\layout\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\layout\\index.js";
 
 
 
 
 
 var Layout = function Layout(_ref) {
-  var children = _ref.children,
-      showSidebar = _ref.showSidebar;
+  var children = _ref.children;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(true),
       _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
       state = _useState2[0],
       setState = _useState2[1];
 
-  var layoutModifier = !state ? 'layout--side-view-enabled' : 'layout--side-view-disabled';
+  var layoutModifier = state ? 'layout--side-view-enabled' : 'layout--side-view-disabled';
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_3___default()('layout', layoutModifier),
     __source: {
@@ -1054,24 +1114,31 @@ var Layout = function Layout(_ref) {
     className: "layout__side-view",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     }
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_menu__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    enabled: state,
+    onClose: function onClose() {
+      return setState(false);
+    },
+    onToggle: function onToggle() {
+      return setState(!state);
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     }
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "layout__main-view",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 26
     }
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "layout__container-main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 27
     }
   }, children)));
 };
@@ -1084,6 +1151,47 @@ var Layout = function Layout(_ref) {
 /*!**************************************************!*\
   !*** ./src/client/components/layout/styles.scss ***!
   \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/client/components/menu/__close-button/index.js":
+/*!************************************************************!*\
+  !*** ./src/client/components/menu/__close-button/index.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/__close-button/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\menu\\__close-button\\index.js";
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var onClick = _ref.onClick;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "menu__close-button",
+    onClick: onClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    }
+  });
+});
+
+/***/ }),
+
+/***/ "./src/client/components/menu/__close-button/styles.scss":
+/*!***************************************************************!*\
+  !*** ./src/client/components/menu/__close-button/styles.scss ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1106,7 +1214,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/__link/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\menu\\__link\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\menu\\__link\\index.js";
 
 
 
@@ -1157,7 +1265,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/__logo/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\menu\\__logo\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\menu\\__logo\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
@@ -1181,7 +1289,7 @@ var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\sr
       lineNumber: 6
     }
   }, "\u0418\u043D\u0442\u0435\u0440\u043D\u0435\u0442-\u044D\u043A\u0432\u0430\u0439\u0440\u0438\u043D\u0433 Payture"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
-    "fill-rule": "evenodd",
+    fillRule: "evenodd",
     style: {
       fill: "rgb(255, 255, 255)"
     },
@@ -1254,6 +1362,47 @@ var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\sr
 
 /***/ }),
 
+/***/ "./src/client/components/menu/__toggle-arrow/index.js":
+/*!************************************************************!*\
+  !*** ./src/client/components/menu/__toggle-arrow/index.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/__toggle-arrow/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\menu\\__toggle-arrow\\index.js";
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var onClick = _ref.onClick;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "menu__toggle-arrow",
+    onClick: onClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    }
+  });
+});
+
+/***/ }),
+
+/***/ "./src/client/components/menu/__toggle-arrow/styles.scss":
+/*!***************************************************************!*\
+  !*** ./src/client/components/menu/__toggle-arrow/styles.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/client/components/menu/index.js":
 /*!*********************************************!*\
   !*** ./src/client/components/menu/index.js ***!
@@ -1266,52 +1415,65 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _logo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./__logo */ "./src/client/components/menu/__logo/index.js");
-/* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./__link */ "./src/client/components/menu/__link/index.js");
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/styles.scss");
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\menu\\index.js";
+/* harmony import */ var _toggle_arrow__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./__toggle-arrow */ "./src/client/components/menu/__toggle-arrow/index.js");
+/* harmony import */ var _close_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./__close-button */ "./src/client/components/menu/__close-button/index.js");
+/* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./__link */ "./src/client/components/menu/__link/index.js");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\menu\\index.js";
 
 
 
 
 
-var Menu = function Menu(props) {
+
+
+var Menu = function Menu(_ref) {
+  var enabled = _ref.enabled,
+      onToggle = _ref.onToggle,
+      onClose = _ref.onClose;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 14
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "menu__side-bg",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_close_button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    onClick: onClose,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 17
     }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_logo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), enabled ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_logo__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 20
+    }
+  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_toggle_arrow__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    onClick: onToggle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "menu__nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 23
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_link__WEBPACK_IMPORTED_MODULE_4__["default"], {
     to: "/",
     text: "\u0413\u043B\u0430\u0432\u043D\u0430\u044F",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 24
     }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_link__WEBPACK_IMPORTED_MODULE_4__["default"], {
     to: "/glossary",
     text: "\u0413\u043B\u043E\u0441\u0441\u0430\u0440\u0438\u0439",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 25
     }
   })));
 };
@@ -1343,21 +1505,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/layout */ "./src/client/components/layout/index.js");
-var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\containers\\dashboard\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\containers\\dashboard\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    }
-  }, "Dashboard"));
+  }, "Dashboard");
 });
 
 /***/ }),
@@ -1373,30 +1530,43 @@ var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\sr
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/layout */ "./src/client/components/layout/index.js");
-var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\containers\\glossary\\index.js";
+/* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/input */ "./src/client/components/input/index.js");
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\containers\\glossary\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "glossary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_input__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "glossary__input",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 12
     }
-  }, "Glossary"));
+  }));
 });
 
 /***/ }),
 
-/***/ "./src/client/fonts.scss":
-/*!*******************************!*\
-  !*** ./src/client/fonts.scss ***!
-  \*******************************/
+/***/ "./src/client/styles/app.scss":
+/*!************************************!*\
+  !*** ./src/client/styles/app.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/client/styles/fonts.scss":
+/*!**************************************!*\
+  !*** ./src/client/styles/fonts.scss ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1840,7 +2010,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./routes */ "./src/server/routes/index.js");
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-dom/server */ "react-dom/server");
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\server\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\server\\index.js";
 
 
 
@@ -1851,7 +2021,7 @@ var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\sr
 var assets = __webpack_require__(/*! ./build/assets.json */ "./build/assets.json");
 
 var server = express__WEBPACK_IMPORTED_MODULE_3___default()();
-server.disable('x-powered-by').use(express__WEBPACK_IMPORTED_MODULE_3___default.a["static"]("C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\public")).use(_routes__WEBPACK_IMPORTED_MODULE_4__["default"]).get('/*', function (req, res) {
+server.disable('x-powered-by').use(express__WEBPACK_IMPORTED_MODULE_3___default.a["static"]("C:\\Users\\simpl\\OneDrive\\Документы\\Node JS Projects\\webapp-admin\\public")).use(_routes__WEBPACK_IMPORTED_MODULE_4__["default"]).get('/*', function (req, res) {
   var context = {};
   var markup = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_5__["renderToString"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["StaticRouter"], {
     context: context,
@@ -2227,7 +2397,7 @@ var response = {
 
 __webpack_require__(/*! razzle-dev-utils/prettyNodeErrors */"razzle-dev-utils/prettyNodeErrors");
 __webpack_require__(/*! webpack/hot/poll?300 */"./node_modules/webpack/hot/poll.js?300");
-module.exports = __webpack_require__(/*! C:\Users\simpl\Documents\Node Projects\webapp-admin\src */"./src/index.js");
+module.exports = __webpack_require__(/*! C:\Users\simpl\OneDrive\Документы\Node JS Projects\webapp-admin\src */"./src/index.js");
 
 
 /***/ }),
@@ -2240,6 +2410,17 @@ module.exports = __webpack_require__(/*! C:\Users\simpl\Documents\Node Projects\
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/defineProperty");
+
+/***/ }),
+
+/***/ "@babel/runtime/helpers/extends":
+/*!*************************************************!*\
+  !*** external "@babel/runtime/helpers/extends" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
 

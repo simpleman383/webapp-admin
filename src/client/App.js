@@ -5,24 +5,21 @@ import Switch from 'react-router-dom/Switch';
 import Dashboard from './containers/dashboard'
 import Glossary from './containers/glossary'
 
+import Layout from './components/layout'
 
 
-
-import './fonts.scss'
-
-import './app.scss'
+import './styles/fonts.scss'
+import './styles/app.scss'
 
 
 const App = () => (
-  <Switch>
+  <Layout>
+    <Switch>
+      <Route exact path="/" component={Dashboard} />
+      <Route exact path="/glossary" component={Glossary} />
+    </Switch>
+  </Layout>
 
-    <Route exact path="/" component={Dashboard} />
-
-    <Route exact path="/glossary" component={Glossary} />
-
-
-
-  </Switch>
 );
 
 export default App;

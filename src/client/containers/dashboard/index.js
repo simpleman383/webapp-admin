@@ -5,8 +5,7 @@ import Layout from '../../components/layout'
 export default (props) => {
 
     return (
-        <Layout>
-            <h1>Dashboard</h1>
-        </Layout>
+        <h1>Dashboard</h1>
+
     )
 }

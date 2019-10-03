@@ -152,7 +152,13 @@ $side-view_size_collapsed: (
 
 .layout__container-main {
     margin: 0 auto;
-    padding: 1em 0;
+    padding: 2em 0;
+
+    @include for_smartphone { 
+        min-width: 270px;
+        max-width: 360px;
+        width: 90%;
+    }
 
     width: 90%;
 

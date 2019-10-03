@@ -1,0 +1,26 @@
+@import '../../../styles/index.scss';
+
+.menu__close-button {
+
+    display: none;
+
+    @include for_smartphone { 
+        display: block;
+
+        background: url('../../../images/icons/close-button.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        position: absolute;
+        height: 1.25em;
+        width: 1.25em;
+
+        right: 1.5em;
+        top: 1.5em;
+
+        cursor: pointer;
+    }
+
+
+}

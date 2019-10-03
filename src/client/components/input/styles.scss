@@ -1,0 +1,26 @@
+@import '../../styles/index.scss';
+
+
+
+
+.input {
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    font-family: Roboto;
+    color: black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    height: 3em;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.input--warning {
+    border: 1px solid #ffb048;
+}
+
+.input--error {
+    border: 1px solid #c80909;
+}
