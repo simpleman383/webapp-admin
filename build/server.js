@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "856c9ff0d2c2ce410707";
+/******/ 	var hotCurrentHash = "4f7f54fc3c4998bcc8bf";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -763,7 +763,7 @@ module.exports =
 /*! exports provided: client, , default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"client\":{\"js\":\"http://localhost:3001/static/js/bundle.js\"},\"\":{\"woff\":[\"http://localhost:3001/static/media/Roboto-Bold.08cb8f79.woff\",\"http://localhost:3001/static/media/Roboto-Light.10ad0f86.woff\",\"http://localhost:3001/static/media/Roboto-Regular.94dac78e.woff\"],\"ttf\":[\"http://localhost:3001/static/media/Roboto-Bold.16d7bb99.ttf\",\"http://localhost:3001/static/media/Roboto-Light.2382fa8a.ttf\",\"http://localhost:3001/static/media/Roboto-Regular.4312f1fb.ttf\"],\"eot\":[\"http://localhost:3001/static/media/Roboto-Bold.4a1d8c27.eot\",\"http://localhost:3001/static/media/Roboto-Light.35d85034.eot\",\"http://localhost:3001/static/media/Roboto-Regular.b9077621.eot\"],\"png\":\"http://localhost:3001/static/media/menu-bg.837f662d.png\"}}");
+module.exports = JSON.parse("{\"client\":{\"js\":\"http://localhost:3001/static/js/bundle.js\"},\"\":{\"woff\":[\"http://localhost:3001/static/media/Roboto-Bold.08cb8f79.woff\",\"http://localhost:3001/static/media/Roboto-Light.10ad0f86.woff\",\"http://localhost:3001/static/media/Roboto-Regular.94dac78e.woff\"],\"ttf\":[\"http://localhost:3001/static/media/Roboto-Bold.16d7bb99.ttf\",\"http://localhost:3001/static/media/Roboto-Light.2382fa8a.ttf\",\"http://localhost:3001/static/media/Roboto-Regular.4312f1fb.ttf\"],\"eot\":[\"http://localhost:3001/static/media/Roboto-Bold.4a1d8c27.eot\",\"http://localhost:3001/static/media/Roboto-Light.35d85034.eot\",\"http://localhost:3001/static/media/Roboto-Regular.b9077621.eot\"],\"svg\":[\"http://localhost:3001/static/media/close-button.e8edf079.svg\",\"http://localhost:3001/static/media/right-arrow.7560c252.svg\"],\"png\":\"http://localhost:3001/static/media/menu-bg.837f662d.png\"}}");
 
 /***/ }),
 
@@ -961,7 +961,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_fonts_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_fonts_scss__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _styles_app_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./styles/app.scss */ "./src/client/styles/app.scss");
 /* harmony import */ var _styles_app_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_app_scss__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\App.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\App.js";
 
 
 
@@ -1005,6 +1005,63 @@ var App = function App() {
 
 /***/ }),
 
+/***/ "./src/client/components/grouping-list/index.js":
+/*!******************************************************!*\
+  !*** ./src/client/components/grouping-list/index.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\grouping-list\\index.js: JSX attributes must only be assigned a non-empty expression (38:60)\n\n\u001b[0m \u001b[90m 36 | \u001b[39m            \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m'grouping-list'\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 | \u001b[39m                \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m'grouping-list__selectors'\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 | \u001b[39m                    \u001b[33m<\u001b[39m\u001b[33mSelector\u001b[39m label\u001b[33m=\u001b[39m\u001b[32m\"Группировать по\"\u001b[39m types\u001b[33m=\u001b[39m{} onClick\u001b[33m=\u001b[39m{} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 39 | \u001b[39m                    \u001b[33m<\u001b[39m\u001b[33mSelector\u001b[39m label\u001b[33m=\u001b[39m\u001b[32m\"Сортировать по\"\u001b[39m types\u001b[33m=\u001b[39m{} onClick\u001b[33m=\u001b[39m{} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 | \u001b[39m                \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 41 | \u001b[39m\u001b[0m\n    at Object.raise (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:6387:17)\n    at Object.jsxParseAttributeValue (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:3430:22)\n    at Object.jsxParseAttribute (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:3478:44)\n    at Object.jsxParseOpeningElementAfterName (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:3498:28)\n    at Object.jsxParseOpeningElementAt (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:3491:17)\n    at Object.jsxParseElementAt (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:3523:33)\n    at Object.jsxParseElementAt (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:3539:32)\n    at Object.jsxParseElementAt (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:3539:32)\n    at Object.jsxParseElement (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:3597:17)\n    at Object.parseExprAtom (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:3604:19)\n    at Object.parseExprSubscripts (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:8483:23)\n    at Object.parseMaybeUnary (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:8463:21)\n    at Object.parseExprOps (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:8329:23)\n    at Object.parseMaybeConditional (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:8302:23)\n    at Object.parseMaybeAssign (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:8249:21)\n    at Object.parseParenAndDistinguishExpression (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:9049:28)\n    at Object.parseExprAtom (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:8833:21)\n    at Object.parseExprAtom (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:3609:20)\n    at Object.parseExprSubscripts (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:8483:23)\n    at Object.parseMaybeUnary (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:8463:21)\n    at Object.parseExprOps (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:8329:23)\n    at Object.parseMaybeConditional (C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\node_modules\\@babel\\parser\\lib\\index.js:8302:23)");
+
+/***/ }),
+
+/***/ "./src/client/components/header/index.js":
+/*!***********************************************!*\
+  !*** ./src/client/components/header/index.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/header/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var title = _ref.title,
+      level = _ref.level,
+      className = _ref.className;
+  var effectiveLevel = 6;
+
+  if (typeof level === 'number' && 1 <= level && level <= 6) {
+    effectiveLevel = level;
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h" + effectiveLevel, {
+    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()('header', className)
+  }, title.toString());
+});
+
+/***/ }),
+
+/***/ "./src/client/components/header/styles.scss":
+/*!**************************************************!*\
+  !*** ./src/client/components/header/styles.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/client/components/input/index.js":
 /*!**********************************************!*\
   !*** ./src/client/components/input/index.js ***!
@@ -1023,7 +1080,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/input/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\input\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\input\\index.js";
 
 
 
@@ -1079,17 +1136,25 @@ var Type = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "@babel/runtime/helpers/slicedToArray");
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../menu */ "./src/client/components/menu/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/layout/styles.scss");
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "@babel/runtime/helpers/defineProperty");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "@babel/runtime/helpers/slicedToArray");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../menu */ "./src/client/components/menu/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/layout/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_5__);
 
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\layout\\index.js";
+
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\layout\\index.js";
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 
 
 
@@ -1098,43 +1163,49 @@ var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u
 var Layout = function Layout(_ref) {
   var children = _ref.children;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(true),
-      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])({
+    mobileOverlay: false
+  }),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState, 2),
       state = _useState2[0],
       setState = _useState2[1];
 
-  var layoutModifier = state ? 'layout--side-view-enabled' : 'layout--side-view-disabled';
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()('layout', layoutModifier),
+  var modifier = state.mobileOverlay ? 'layout--mobile-overlayed' : '';
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_4___default()('layout', modifier),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "layout__side-view",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_menu__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_menu__WEBPACK_IMPORTED_MODULE_3__["default"], {
     enabled: state,
     onClose: function onClose() {
-      return setState(false);
+      return setState(_objectSpread({}, state, {
+        mobileOverlay: false
+      }));
     },
     onToggle: function onToggle() {
-      return setState(!state);
+      return setState(_objectSpread({}, state, {
+        mobileOverlay: !state.mobileOverlay
+      }));
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     }
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "layout__main-view",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "layout__container-main",
     __source: {
       fileName: _jsxFileName,
@@ -1171,7 +1242,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/__close-button/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\menu\\__close-button\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\menu\\__close-button\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
@@ -1214,7 +1285,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/__link/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\menu\\__link\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\menu\\__link\\index.js";
 
 
 
@@ -1265,7 +1336,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/__logo/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\menu\\__logo\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\menu\\__logo\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
@@ -1375,7 +1446,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/__toggle-arrow/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\menu\\__toggle-arrow\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\menu\\__toggle-arrow\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
@@ -1420,7 +1491,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./__link */ "./src/client/components/menu/__link/index.js");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles.scss */ "./src/client/components/menu/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\components\\menu\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\components\\menu\\index.js";
 
 
 
@@ -1505,7 +1576,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/layout */ "./src/client/components/layout/index.js");
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\containers\\dashboard\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\containers\\dashboard\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
@@ -1531,7 +1602,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/input */ "./src/client/components/input/index.js");
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\containers\\glossary\\index.js";
+/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/header */ "./src/client/components/header/index.js");
+/* harmony import */ var _components_grouping_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/grouping-list */ "./src/client/components/grouping-list/index.js");
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\containers\\glossary\\index.js";
+
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
@@ -1539,14 +1614,32 @@ var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u
     className: "glossary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_input__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    className: "glossary__input",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    level: 1,
+    title: "\u0413\u043B\u043E\u0441\u0441\u0430\u0440\u0438\u0439",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_grouping_list__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    group: function group(items) {
+      return items;
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    }
+  }, function (group, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: "glossary-article-list-item-".concat(index),
+      className: "glossary__list-group",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      }
+    });
   }));
 });
 
@@ -2010,7 +2103,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./routes */ "./src/server/routes/index.js");
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-dom/server */ "react-dom/server");
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\server\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\server\\index.js";
 
 
 
@@ -2021,7 +2114,7 @@ var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u
 var assets = __webpack_require__(/*! ./build/assets.json */ "./build/assets.json");
 
 var server = express__WEBPACK_IMPORTED_MODULE_3___default()();
-server.disable('x-powered-by').use(express__WEBPACK_IMPORTED_MODULE_3___default.a["static"]("C:\\Users\\simpl\\OneDrive\\Документы\\Node JS Projects\\webapp-admin\\public")).use(_routes__WEBPACK_IMPORTED_MODULE_4__["default"]).get('/*', function (req, res) {
+server.disable('x-powered-by').use(express__WEBPACK_IMPORTED_MODULE_3___default.a["static"]("C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\public")).use(_routes__WEBPACK_IMPORTED_MODULE_4__["default"]).get('/*', function (req, res) {
   var context = {};
   var markup = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_5__["renderToString"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["StaticRouter"], {
     context: context,
@@ -2397,7 +2490,7 @@ var response = {
 
 __webpack_require__(/*! razzle-dev-utils/prettyNodeErrors */"razzle-dev-utils/prettyNodeErrors");
 __webpack_require__(/*! webpack/hot/poll?300 */"./node_modules/webpack/hot/poll.js?300");
-module.exports = __webpack_require__(/*! C:\Users\simpl\OneDrive\Документы\Node JS Projects\webapp-admin\src */"./src/index.js");
+module.exports = __webpack_require__(/*! C:\Users\simpl\Documents\Node Projects\webapp-admin\src */"./src/index.js");
 
 
 /***/ }),

@@ -7,18 +7,18 @@ import './styles.scss'
 
 const Layout = ({ children }) => {
 
-    const [state, setState] = useState(true)
+    const [state, setState] = useState({ mobileOverlay: false })
 
-    let layoutModifier = state ? 'layout--side-view-enabled' : 'layout--side-view-disabled'
+    const modifier = state.mobileOverlay ? 'layout--mobile-overlayed' : ''
 
     return (
-        <div className={cls('layout', layoutModifier)}>
+        <div className={cls('layout', modifier)}>
             
             <div className='layout__side-view'>
                 <Menu 
-                    enabled={state} 
-                    onClose={() => setState(false)} 
-                    onToggle={() => setState(!state)} 
+                    enabled={state}
+                    onClose={() =>  setState({ ...state, mobileOverlay: false })} 
+                    onToggle={() => setState({ ...state, mobileOverlay: !state.mobileOverlay })} 
                 />
             </div>
 

@@ -23,7 +23,7 @@
 
 }
 
-$side-view_size_shown: (
+$side-view_size_default: (
     'smartphone': 100%,
     'tablet_portrait': 250px,
     'tablet_landscape': 300px,
@@ -31,128 +31,73 @@ $side-view_size_shown: (
     'desktop': 300px
 );
 
-.layout--side-view-enabled {
+.layout__side-view {
 
-    .layout__side-view {
+    @include for_desktop { 
+        width: map-get($side-view_size_default, 'desktop'); 
+    }
 
-        @include for_desktop { 
-            width: map-get($side-view_size_shown, 'desktop'); 
-        }
-
-        @include for_laptop { 
-            width: map-get($side-view_size_shown, 'laptop'); 
-        }
+    @include for_laptop { 
+        width: map-get($side-view_size_default, 'laptop'); 
+    }
 
 
-        @include for_tablet_landscape { 
-            width: map-get($side-view_size_shown, 'tablet_landscape'); 
-        }
+    @include for_tablet_landscape { 
+        width: map-get($side-view_size_default, 'tablet_landscape'); 
+    }
 
 
-        @include for_tablet_portrait { 
-            width: map-get($side-view_size_shown, 'tablet_portrait'); 
-        }
+    @include for_tablet_portrait { 
+        width: map-get($side-view_size_default, 'tablet_portrait'); 
+    }
 
-        @include for_smartphone { 
-            width: map-get($side-view_size_shown, 'smartphone');
+    @include for_smartphone { 
+        width: map-get($side-view_size_default, 'smartphone');
+        left: -100%;
+    }
+
+}
+
+.layout__main-view {
+    @include for_desktop { 
+        margin-left: map-get($side-view_size_default, 'desktop'); 
+    }
+
+    @include for_laptop { 
+        margin-left: map-get($side-view_size_default, 'laptop'); 
+    }
+
+
+    @include for_tablet_landscape { 
+        margin-left: map-get($side-view_size_default, 'tablet_landscape'); 
+    }
+
+
+    @include for_tablet_portrait { 
+        margin-left: map-get($side-view_size_default, 'tablet_portrait'); 
+    }
+
+    @include for_smartphone { 
+        margin-left: 0; 
+    }
+}
+
+.layout--mobile-overlayed {
+
+    @include for_smartphone { 
+        .layout__side-view {
             left: 0%;
         }
 
-    }
-
-    .layout__main-view {
-        @include for_desktop { 
-            margin-left: map-get($side-view_size_shown, 'desktop'); 
-        }
-
-        @include for_laptop { 
-            margin-left: map-get($side-view_size_shown, 'laptop'); 
-        }
-
-
-        @include for_tablet_landscape { 
-            margin-left: map-get($side-view_size_shown, 'tablet_landscape'); 
-        }
-
-
-        @include for_tablet_portrait { 
-            margin-left: map-get($side-view_size_shown, 'tablet_portrait'); 
-        }
-
-        @include for_smartphone { 
+        .layout__main-view {
             margin-left: 0; 
         }
     }
 }
-
-
-
-$side-view_size_collapsed: (
-    'smartphone': 100%,
-    'tablet_portrait': 50px,
-    'tablet_landscape': 60px,
-    'laptop': 70px,
-    'desktop': 70px
-);
-
-
-.layout--side-view-disabled {
-    .layout__side-view {
-
-        @include for_desktop { 
-            width: map-get($side-view_size_collapsed, 'desktop'); 
-        }
-
-        @include for_laptop { 
-            width: map-get($side-view_size_collapsed, 'laptop'); 
-        }
-
-
-        @include for_tablet_landscape { 
-            width: map-get($side-view_size_collapsed, 'tablet_landscape'); 
-        }
-
-
-        @include for_tablet_portrait { 
-            width: map-get($side-view_size_collapsed, 'tablet_portrait'); 
-        }
-
-        @include for_smartphone { 
-            width: map-get($side-view_size_collapsed, 'smartphone'); 
-            left: -100%;
-        }
-
-    }
-
-    .layout__main-view {
-        @include for_desktop { 
-            margin-left: map-get($side-view_size_collapsed, 'desktop'); 
-        }
-
-        @include for_laptop { 
-            margin-left: map-get($side-view_size_collapsed, 'laptop'); 
-        }
-
-
-        @include for_tablet_landscape { 
-            margin-left: map-get($side-view_size_collapsed, 'tablet_landscape'); 
-        }
-
-
-        @include for_tablet_portrait { 
-            margin-left: map-get($side-view_size_collapsed, 'tablet_portrait'); 
-        }
-
-        @include for_smartphone { 
-            margin-left: 0; 
-        }
-    }
-}
-
 
 .layout__container-main {
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 3em 0;
 
     @include for_smartphone { 
         min-width: 270px;

@@ -8,7 +8,7 @@ body {
     @include for_laptop  {  font-size: 14px; }
     @include for_tablet_landscape {  font-size: 14px; }
     @include for_tablet_portrait {  font-size: 14px; }
-    @include for_smartphone {  font-size: 16px; }
+    @include for_smartphone {  font-size: 12px; }
 
 
     height: 100vh;
