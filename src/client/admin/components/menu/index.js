@@ -21,8 +21,8 @@ const Menu = ({ enabled, onToggle, onClose }) => {
             }
             
             <nav className='menu__nav'>
-                <NavLink to='/' text='Главная' />
-                <NavLink to='/glossary' text='Глоссарий' />
+                <NavLink to='/admin-panel' text='Главная' />
+                <NavLink to='/admin-panel/glossary' text='Глоссарий' />
 
             </nav>
         </div>

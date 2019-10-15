@@ -5,7 +5,7 @@ const GlossaryArticleSchema = new mongoose.Schema({
     creationDate: Date,
     lastEditDate: Date,
     keywords: Array,
-    body: String,
+    body: Object,
     url: String, 
 })
 

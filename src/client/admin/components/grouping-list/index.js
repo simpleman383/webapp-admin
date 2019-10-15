@@ -1,5 +1,5 @@
 import React from 'react'
-import Payture from '../../services/payture-admin'
+import Payture from '../../services/backend'
 
 
 import Selector from './__group-selector'
@@ -35,8 +35,8 @@ class GroupingList extends React.Component {
         return (
             <div className='grouping-list'>
                 <div className='grouping-list__selectors'>
-                    <Selector label="Группировать по" types={} onClick={} />
-                    <Selector label="Сортировать по" types={} onClick={} />
+                    <Selector label="Группировать по" types={[]} onClick={null} />
+                    <Selector label="Сортировать по" types={[]} onClick={null} />
                 </div>
 
                 <ListView items={itemGroups}>

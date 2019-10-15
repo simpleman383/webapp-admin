@@ -1,25 +1,12 @@
-import React from 'react';
-import Route from 'react-router-dom/Route';
-import Switch from 'react-router-dom/Switch';
+import React from 'react'
+import Website from './website'
+import Admin from './admin'
 
-import Dashboard from './containers/dashboard'
-import Glossary from './containers/glossary'
+import { Route, Switch } from 'react-router-dom';
 
-import Layout from './components/layout'
-
-
-import './styles/fonts.scss'
-import './styles/app.scss'
-
-
-const App = () => (
-  <Layout>
-    <Switch>
-      <Route exact path="/" component={Dashboard} />
-      <Route exact path="/glossary" component={Glossary} />
-    </Switch>
-  </Layout>
-
-);
-
-export default App;
+export default () => (
+  <Switch>
+    <Route path="/admin-panel" component={Admin} />
+    <Route path="/:language?" component={Website} />
+  </Switch>
+)
