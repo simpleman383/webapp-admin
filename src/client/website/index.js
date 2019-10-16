@@ -1,3 +1,10 @@
 import React from 'react'
+import { Redirect } from 'react-router-dom'
 
-export default () => <h1>{"Payture website stub"}</h1>
+export default () => {
+  console.log("Payture website stub");
+  
+  return (
+    <Redirect to={'/admin-panel'} />
+  )
+}

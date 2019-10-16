@@ -1,9 +1,7 @@
 const success = response => body => response.status(200).json({
     success: true,
     error: null,
-    data: {
-        ...body
-    }
+    data: body
 });
 
 const error = response => error => response.status(400).json({

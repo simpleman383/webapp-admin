@@ -3,7 +3,7 @@ import React from 'react'
 
 import Input from '../../components/input'
 import Header from '../../components/header'
-import SortableList from '../../components/grouping-list'
+import ListView from '../../components/list-view'
 
 import { connect } from 'react-redux'
 
@@ -11,14 +11,31 @@ import { bindActionCreators } from 'redux';
 import { loadArticleList } from '../../store/glossary/actions'
 
 
-const groupingRules = [
-	{
-		type: 'Title',
-		title: 'названию',
-		group: (items) => {}
-	}
+const reducer = {
 
-]
+	sort: {
+
+		label: 'Сортировать по:',
+
+		process: (items, type) => {
+			switch (type) {
+				case 'title' : 
+					return items.sort((left, right) => left.title < right.title ? -1 : 1)
+				case 'creationDate' :
+					return items.sort((left, right) => left.creationDate < right.creationDate ? -1 : 1)
+				default:
+					return items
+			}
+		},
+
+		types: [
+				{ key: 'title', label: 'названию' },
+				{ key: 'creationDate', label: 'дате создания' },
+
+			]
+			
+		},
+}
 
 
 class GlossaryEditorPage extends React.Component {
@@ -33,13 +50,16 @@ class GlossaryEditorPage extends React.Component {
 
 	render() {
 
+		const { previews } = this.props
+
 		return (
 			<div className='glossary'>
 				<Header level={1} title='Глоссарий' />
+
+				<ListView actionReducer={reducer} items={previews} />
+
 	
-				<div>
-					{ this.props.articles.map( a => <p>{a.title}</p> )}
-				</div>
+
 			</div>
 		)
 	} 
@@ -49,7 +69,7 @@ class GlossaryEditorPage extends React.Component {
 const mapDispatchToProps = dispatch => bindActionCreators({ loadArticleList }, dispatch)
 
 const mapStateToProps = state => ({
-	articles: state.glossary.articles
+	previews: state.glossary.previews
 
 })
 

@@ -2,14 +2,14 @@ import { fetch } from '../helpers'
  
 const GlossaryInterface = {
 
-  getAllArticles : async () => {
-    const response = await fetch('/admin/glossary')
-    return response.data.articles;
+  getArticlePreviews : async () => {
+    const response = await fetch('/admin/glossary-previews')
+    return response.data;
   },
 
   getArticle : async (id) => {
     const response = await fetch(`/admin/glossary/${id}`)
-    return response.data.article;
+    return response.data;
   }
 
 }

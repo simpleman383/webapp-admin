@@ -2,11 +2,11 @@ import * as type from './actionTypes'
 import backend from '../../services/backend'
 
 export const loadArticleList = () => async (dispatch) => {
-  const articles = await backend.glossary.getAllArticles()
+  const previews = await backend.glossary.getArticlePreviews()
 
   dispatch({ 
-    type: type.GLOSSARY_ARTICLE_LIST_LOAD,
-    articles: articles || []
+    type: type.GLOSSARY_ARTICLE_PREVIEW_LIST_LOAD,
+    previews: previews || []
   })
 
   

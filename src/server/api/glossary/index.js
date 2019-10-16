@@ -41,7 +41,7 @@ const api = {
         repository.get({ id: req.params.id })
             .then(article => article.toJSON() )
             .then(article => {
-                return response.success(res)({ article })
+                return response.success(res)(article)
             })
             .catch(err => {
                 return response.error(res)(error.DB_ERROR);
@@ -53,12 +53,23 @@ const api = {
         repository.get()
             .then(articles => articles.map(article => article.toJSON()))
             .then(articles => {
-                return response.success(res)({ articles });
+                return response.success(res)(articles);
             })
             .catch(err => {
                 return response.error(res)(error.DB_ERROR);
             })
     },  
+
+    getPreviews: (req, res) => {
+        repository.getArticlePreviews()
+            .then(preview => preview.map(preview => preview.toJSON()))
+            .then(previews => {
+                return response.success(res)(previews);
+            })
+            .catch(err => {
+                return response.error(res)(error.DB_ERROR);
+            })
+    }
 
 }
 

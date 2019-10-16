@@ -1,15 +1,15 @@
 import * as type from '../glossary/actionTypes'
 
 const initialState = {
-  articles: [],
+  previews: [],
 }
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case type.GLOSSARY_ARTICLE_LIST_LOAD: {
+    case type.GLOSSARY_ARTICLE_PREVIEW_LIST_LOAD: {
       return {
         ...state,
-        articles: action.articles
+        previews: action.previews
       }
     }
     default:
