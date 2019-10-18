@@ -1,65 +1,78 @@
-import React, { useState } from 'react'
-import Payture from '../../services/backend'
+import React, { useState, useLayoutEffect } from 'react'
+import cls from 'classnames'
 
+import Dropdown from '../dropdown'
+import Input from '../input'
 
-import Group from '../list-group'
-import SimpleList from  '../simple-list'
-
-import Selector from './__selector'
-
-
-
-const ListView = ({ items, actionReducer }) => {
-
-	const { filter, group, sort } = actionReducer 
-
-	const [ actionState, setStateForAction ] = useState({
-		filter: filter ? filter.types[0].key : null,
-		group: group ? group.types[0].key : null,
-		sort: sort ? sort.types[0].key : null,
-	})
-
-	const onSelectorClicked = (type, action) => {
-		if ( typeof(actionState[action]) !== 'undefined' ) {
-			setStateForAction({ [action] : type })
-		}
-	}
-
-	const process = (items) => {
-		if (!items || !items.length) {
-			return []
-		}
-
-		let preprocessed = [...items]
-
-		if (actionState.filter) {
-			preprocessed = filter.process(preprocessed, actionState.filter)
-		}
-	
-		if (actionState.group) {
-			preprocessed = group.process(preprocessed, actionState.group)
-		}
-	
-		if (actionState.sort) {
-			preprocessed = sort.process(preprocessed, actionState.sort)
-		}
-
-		return preprocessed
-	}
-	
-
-	return (
-		<div className='list-view'>
-			<div className='list-view__selectors'>
-				{ Object.keys(actionReducer).map((action, idx) => <Selector key={idx} label={actionReducer[action].label} types={actionReducer[action].types} onClick={type => onSelectorClicked(type, action)} /> )}
-			</div>
-
-			<div className='list-view__body'>
-				{ process(items).map(i => <p>{i.title}</p>)}
-			</div>
-		</div>
-	)
+const stateType = {
+  ORIGINAL: 'original',
+  FILTERED: 'filtered',
+  GROUPED: 'grouped',
+  SORTED: 'sorted'
 }
+
+
+const processorDefault = (currentStateType, incomingAction) => items => items
+
+
+const Selectors = ({ label, type, presets, onClick = () => null }) => (
+  <div className={`list-view__${type}-selectors`}>
+    <label>{label}</label>
+    {
+      presets.map((item, idx) => <a key={`label-${idx}`} onClick={() => onClick(type, item.key)}>{item.label}</a>)
+    }
+  </div>
+)
+
+
+const groupPresets = [
+  {
+    type: 'creationDate',
+    label: 'чему-то',
+    reduce: (items) => {
+
+    }
+  }
+]
+
+
+const DropdownSelector = ({ className }) => (
+  <select className={'dropdown-selector'}>
+
+  </select>
+)
+
+
+const ListView = ({ items, children }) => {
+
+  const [ groupState, setGroupState ] = useState({ type: 'creationDate' })
+
+  return (
+    <div className='list-view'>
+      <div className='list-view__control control'>
+        <div className='control__left'>
+          <Dropdown defaultValue='date' label="Группировать по" options={[ {key: 'name', value : "названию"}, {key: 'date', value : "дате создания"}, ]} />
+          <Dropdown label="Сортировать по" options={[ {key: 'name asc', value : "A-Z"}, {key: 'name desc', value : "Z-A"}, ]} />
+        </div>
+
+        <div className='control__right'>
+          <Input />
+        </div>
+      </div>
+      
+
+
+
+
+
+{/*       <div className='list-view__body'>
+        {items && items.map(item => children(item))}
+      </div>
+ */}
+    </div>
+  )
+}
+
 
 
 export default ListView

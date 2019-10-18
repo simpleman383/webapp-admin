@@ -3,12 +3,12 @@ import React from 'react'
 
 import Input from '../../components/input'
 import Header from '../../components/header'
-import ListView from '../../components/list-view'
 
 import { connect } from 'react-redux'
 
 import { bindActionCreators } from 'redux';
 import { loadArticleList } from '../../store/glossary/actions'
+import ListView from '../../components/list-view';
 
 
 const reducer = {
@@ -56,10 +56,9 @@ class GlossaryEditorPage extends React.Component {
 			<div className='glossary'>
 				<Header level={1} title='Глоссарий' />
 
-				<ListView actionReducer={reducer} items={previews} />
-
-	
-
+				<ListView items={previews}>
+					{ item => <p>{item.title}</p> }
+				</ListView>
 			</div>
 		)
 	} 

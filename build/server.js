@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "e684da956124e357df52";
+/******/ 	var hotCurrentHash = "fab5651c530048b96805";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1050,6 +1050,107 @@ var App = function App() {
 
 /***/ }),
 
+/***/ "./src/client/admin/components/dropdown/index.js":
+/*!*******************************************************!*\
+  !*** ./src/client/admin/components/dropdown/index.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "@babel/runtime/helpers/slicedToArray");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/dropdown/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_3__);
+
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\dropdown\\index.js";
+
+
+
+
+var Dropdown = function Dropdown(_ref) {
+  var className = _ref.className,
+      controlledValue = _ref.value,
+      defaultValue = _ref.defaultValue,
+      label = _ref.label,
+      options = _ref.options,
+      _ref$disabled = _ref.disabled,
+      disabled = _ref$disabled === void 0 ? false : _ref$disabled,
+      onChange = _ref.onChange;
+
+  if (defaultValue) {
+    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(defaultValue),
+        _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
+        valueState = _useState2[0],
+        setValue = _useState2[1];
+  }
+
+  var handleChange = function handleChange(e, data) {
+    var value = e.target.value;
+
+    if (defaultValue) {
+      setValue(value);
+    }
+
+    typeof onChange === 'function' && onChange(value);
+  };
+
+  var value = controlledValue || valueState;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('dropdown', className),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    className: "dropdown__label",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    }
+  }, label), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
+    className: "dropdown__select",
+    onChange: handleChange,
+    value: value,
+    disabled: disabled,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    }
+  }, options && options.map(function (option, idx) {
+    var key = option.key,
+        label = option.value;
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+      key: 'option-' + idx,
+      value: key,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      }
+    }, label);
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Dropdown);
+
+/***/ }),
+
+/***/ "./src/client/admin/components/dropdown/styles.scss":
+/*!**********************************************************!*\
+  !*** ./src/client/admin/components/dropdown/styles.scss ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/client/admin/components/header/index.js":
 /*!*****************************************************!*\
   !*** ./src/client/admin/components/header/index.js ***!
@@ -1263,118 +1364,6 @@ var Layout = function Layout(_ref) {
 
 /***/ }),
 
-/***/ "./src/client/admin/components/list-group/index.js":
-/*!*********************************************************!*\
-  !*** ./src/client/admin/components/list-group/index.js ***!
-  \*********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../header */ "./src/client/admin/components/header/index.js");
-/* harmony import */ var _list_view__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../list-view */ "./src/client/admin/components/list-view/index.js");
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-group\\index.js";
-
-
-
-
-
-var ListGroup = function ListGroup(_ref) {
-  var key = _ref.key,
-      className = _ref.className,
-      title = _ref.title,
-      children = _ref.children,
-      items = _ref.items;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    key: key,
-    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()('list-group', className),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_header__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: "list-group__header",
-    level: 3,
-    title: title,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_list_view__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "list-group__list-view",
-    items: items,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    }
-  }, function (item, index) {
-    return children(item, index);
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (ListGroup);
-
-/***/ }),
-
-/***/ "./src/client/admin/components/list-view/__selector/index.js":
-/*!*******************************************************************!*\
-  !*** ./src/client/admin/components/list-view/__selector/index.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-view\\__selector\\index.js";
-
-
-
-var GroupListSelector = function GroupListSelector(_ref) {
-  var types = _ref.types,
-      className = _ref.className,
-      active = _ref.active,
-      label = _ref.label,
-      _onClick = _ref.onClick;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()('selector list-view__selector', className),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    className: 'selector__item selector__label',
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  }, label), types.map(function (item, idx) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      key: "selector-".concat(idx),
-      className: classnames__WEBPACK_IMPORTED_MODULE_1___default()('selector__item', item.key == active && 'selector__item--active'),
-      onClick: function onClick() {
-        return _onClick(item.key);
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      }
-    }, item.label);
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (GroupListSelector);
-
-/***/ }),
-
 /***/ "./src/client/admin/components/list-view/index.js":
 /*!********************************************************!*\
   !*** ./src/client/admin/components/list-view/index.js ***!
@@ -1384,111 +1373,152 @@ var GroupListSelector = function GroupListSelector(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "@babel/runtime/helpers/toConsumableArray");
-/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "@babel/runtime/helpers/defineProperty");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "@babel/runtime/helpers/slicedToArray");
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _services_backend__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/backend */ "./src/client/admin/services/backend/index.js");
-/* harmony import */ var _list_group__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../list-group */ "./src/client/admin/components/list-group/index.js");
-/* harmony import */ var _simple_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../simple-list */ "./src/client/admin/components/simple-list/index.js");
-/* harmony import */ var _selector__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./__selector */ "./src/client/admin/components/list-view/__selector/index.js");
-
-
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "@babel/runtime/helpers/slicedToArray");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _dropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../dropdown */ "./src/client/admin/components/dropdown/index.js");
+/* harmony import */ var _input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../input */ "./src/client/admin/components/input/index.js");
 
 var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-view\\index.js";
 
 
 
 
+var stateType = {
+  ORIGINAL: 'original',
+  FILTERED: 'filtered',
+  GROUPED: 'grouped',
+  SORTED: 'sorted'
+};
 
+var processorDefault = function processorDefault(currentStateType, incomingAction) {
+  return function (items) {
+    return items;
+  };
+};
 
-var ListView = function ListView(_ref) {
-  var items = _ref.items,
-      actionReducer = _ref.actionReducer;
-  var filter = actionReducer.filter,
-      group = actionReducer.group,
-      sort = actionReducer.sort;
+var Selectors = function Selectors(_ref) {
+  var label = _ref.label,
+      type = _ref.type,
+      presets = _ref.presets,
+      _ref$onClick = _ref.onClick,
+      _onClick = _ref$onClick === void 0 ? function () {
+    return null;
+  } : _ref$onClick;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])({
-    filter: filter ? filter.types[0].key : null,
-    group: group ? group.types[0].key : null,
-    sort: sort ? sort.types[0].key : null
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "list-view__".concat(type, "-selectors"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    }
+  }, label), presets.map(function (item, idx) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+      key: "label-".concat(idx),
+      onClick: function onClick() {
+        return _onClick(type, item.key);
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      }
+    }, item.label);
+  }));
+};
+
+var groupPresets = [{
+  type: 'creationDate',
+  label: 'чему-то',
+  reduce: function reduce(items) {}
+}];
+
+var DropdownSelector = function DropdownSelector(_ref2) {
+  var className = _ref2.className;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
+    className: 'dropdown-selector',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    }
+  });
+};
+
+var ListView = function ListView(_ref3) {
+  var items = _ref3.items,
+      children = _ref3.children;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
+    type: 'creationDate'
   }),
-      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState, 2),
-      actionState = _useState2[0],
-      setStateForAction = _useState2[1];
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
+      groupState = _useState2[0],
+      setGroupState = _useState2[1];
 
-  var onSelectorClicked = function onSelectorClicked(type, action) {
-    if (typeof actionState[action] !== 'undefined') {
-      setStateForAction(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, action, type));
-    }
-  };
-
-  var process = function process(items) {
-    if (!items || !items.length) {
-      return [];
-    }
-
-    var preprocessed = _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(items);
-
-    if (actionState.filter) {
-      preprocessed = filter.process(preprocessed, actionState.filter);
-    }
-
-    if (actionState.group) {
-      preprocessed = group.process(preprocessed, actionState.group);
-    }
-
-    if (actionState.sort) {
-      preprocessed = sort.process(preprocessed, actionState.sort);
-    }
-
-    return preprocessed;
-  };
-
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "list-view",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "list-view__control control",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
     }
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-    className: "list-view__selectors",
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "control__left",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 53
     }
-  }, Object.keys(actionReducer).map(function (action, idx) {
-    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_selector__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      key: idx,
-      label: actionReducer[action].label,
-      types: actionReducer[action].types,
-      onClick: function onClick(type) {
-        return onSelectorClicked(type, action);
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 54
-      }
-    });
-  })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-    className: "list-view__body",
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_dropdown__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    defaultValue: "date",
+    label: "\u0413\u0440\u0443\u043F\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u043E",
+    options: [{
+      key: 'name',
+      value: "названию"
+    }, {
+      key: 'date',
+      value: "дате создания"
+    }],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 54
     }
-  }, process(items).map(function (i) {
-    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 58
-      }
-    }, i.title);
-  })));
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_dropdown__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    label: "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u043E",
+    options: [{
+      key: 'name asc',
+      value: "A-Z"
+    }, {
+      key: 'name desc',
+      value: "Z-A"
+    }],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    }
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "control__right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_input__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    }
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ListView);
@@ -1830,56 +1860,6 @@ var Menu = function Menu(_ref) {
 
 /***/ }),
 
-/***/ "./src/client/admin/components/simple-list/index.js":
-/*!**********************************************************!*\
-  !*** ./src/client/admin/components/simple-list/index.js ***!
-  \**********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/simple-list/styles.scss");
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\simple-list\\index.js";
-
-
-
-
-var ListView = function ListView(_ref) {
-  var className = _ref.className,
-      items = _ref.items,
-      children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()('list', className),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, items && items.length && items.map(function (item) {
-    return children(item);
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (ListView);
-
-/***/ }),
-
-/***/ "./src/client/admin/components/simple-list/styles.scss":
-/*!*************************************************************!*\
-  !*** ./src/client/admin/components/simple-list/styles.scss ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ "./src/client/admin/containers/dashboard/index.js":
 /*!********************************************************!*\
   !*** ./src/client/admin/containers/dashboard/index.js ***!
@@ -1929,12 +1909,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/input */ "./src/client/admin/components/input/index.js");
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/header */ "./src/client/admin/components/header/index.js");
-/* harmony import */ var _components_list_view__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/list-view */ "./src/client/admin/components/list-view/index.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! redux */ "redux");
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _store_glossary_actions__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../store/glossary/actions */ "./src/client/admin/store/glossary/actions.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! redux */ "redux");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _store_glossary_actions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../store/glossary/actions */ "./src/client/admin/store/glossary/actions.js");
+/* harmony import */ var _components_list_view__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/list-view */ "./src/client/admin/components/list-view/index.js");
 
 
 
@@ -2010,13 +1990,19 @@ function (_React$Component) {
           fileName: _jsxFileName,
           lineNumber: 57
         }
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_list_view__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        actionReducer: reducer,
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_list_view__WEBPACK_IMPORTED_MODULE_11__["default"], {
         items: previews,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 59
         }
+      }, function (item) {
+        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 60
+          }
+        }, item.title);
       }));
     }
   }]);
@@ -2025,8 +2011,8 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  return Object(redux__WEBPACK_IMPORTED_MODULE_10__["bindActionCreators"])({
-    loadArticleList: _store_glossary_actions__WEBPACK_IMPORTED_MODULE_11__["loadArticleList"]
+  return Object(redux__WEBPACK_IMPORTED_MODULE_9__["bindActionCreators"])({
+    loadArticleList: _store_glossary_actions__WEBPACK_IMPORTED_MODULE_10__["loadArticleList"]
   }, dispatch);
 };
 
@@ -2036,7 +2022,7 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_9__["connect"])(mapStateToProps, mapDispatchToProps)(GlossaryEditorPage));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])(mapStateToProps, mapDispatchToProps)(GlossaryEditorPage));
 
 /***/ }),
 
@@ -3405,17 +3391,6 @@ module.exports = require("@babel/runtime/helpers/possibleConstructorReturn");
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/slicedToArray");
-
-/***/ }),
-
-/***/ "@babel/runtime/helpers/toConsumableArray":
-/*!***********************************************************!*\
-  !*** external "@babel/runtime/helpers/toConsumableArray" ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/toConsumableArray");
 
 /***/ }),
 
