@@ -8,7 +8,7 @@ const Dropdown = ({ className, value: controlledValue, defaultValue, label, opti
     var [ valueState, setValue ] = useState(defaultValue)
   }
 
-  const handleChange = (e, data) => {
+  const handleChange = (e) => {
     const value = e.target.value
     if (defaultValue) {
       setValue(value)

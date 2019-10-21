@@ -1,77 +1,75 @@
 import React, { useState, useLayoutEffect } from 'react'
 import cls from 'classnames'
 
-import Dropdown from '../dropdown'
-import Input from '../input'
-
-const stateType = {
-  ORIGINAL: 'original',
-  FILTERED: 'filtered',
-  GROUPED: 'grouped',
-  SORTED: 'sorted'
-}
+import * as Context from './context'
 
 
-const processorDefault = (currentStateType, incomingAction) => items => items
+import Filter from './__filter'
+import Selector from './__selector'
 
 
-const Selectors = ({ label, type, presets, onClick = () => null }) => (
-  <div className={`list-view__${type}-selectors`}>
-    <label>{label}</label>
-    {
-      presets.map((item, idx) => <a key={`label-${idx}`} onClick={() => onClick(type, item.key)}>{item.label}</a>)
-    }
-  </div>
-)
+import ListLayout from './layout'
 
 
-const groupPresets = [
-  {
-    type: 'creationDate',
-    label: 'чему-то',
-    reduce: (items) => {
 
+
+ 
+const ListView = ({ 
+  groupOptions, 
+  groupLabel = 'Группировать по:', 
+  groupKeyDefault,
+  sortOptions, 
+  sortLabel = 'Упорядочить по:', 
+  sortKeyDefault,
+  items = [], 
+  filter,
+  children }) => {
+
+  const [ groupFn, setGroupFn ] = useState({ group: groupOptions[0].fn })
+  const [ sortFn, setSortFn ] = useState({ sort: sortOptions[0].fn })
+  const [ filterFn, setFilterFn ] = useState({ filter: filter(null) })
+
+
+  const onSelectorChanged = (selectorType, fn) => {
+    switch(selectorType) { 
+      case 'sort' : {
+        setSortFn({ sort: fn })
+        break
+      }
+      case 'group' : {
+        setGroupFn({ group: fn })
+        break
+      }
+      default:
+        break;
     }
   }
-]
 
+  const onFilterChanged = (filterValue) => {
+    setFilterFn({ filter: filter(filterValue) })
+  }
 
-const DropdownSelector = ({ className }) => (
-  <select className={'dropdown-selector'}>
-
-  </select>
-)
-
-
-const ListView = ({ items, children }) => {
-
-  const [ groupState, setGroupState ] = useState({ type: 'creationDate' })
+    
+  const groupSelector = () => <Selector label={groupLabel} options={groupOptions} defaultValue={groupKeyDefault || groupOptions[0].key} onChange={val => onSelectorChanged('group', val)} /> 
+  const sortSelector = () => <Selector label={sortLabel} options={sortOptions} defaultValue={sortKeyDefault || sortOptions[0].key} onChange={val => onSelectorChanged('sort', val)} /> 
+  const inputFilter = () => <Filter onChange={(value) => onFilterChanged(value) } />
 
   return (
-    <div className='list-view'>
-      <div className='list-view__control control'>
-        <div className='control__left'>
-          <Dropdown defaultValue='date' label="Группировать по" options={[ {key: 'name', value : "названию"}, {key: 'date', value : "дате создания"}, ]} />
-          <Dropdown label="Сортировать по" options={[ {key: 'name asc', value : "A-Z"}, {key: 'name desc', value : "Z-A"}, ]} />
-        </div>
-
-        <div className='control__right'>
-          <Input />
-        </div>
-      </div>
+    <Context.Filter.Provider value={filterFn}>
+    <Context.Sort.Provider value={sortFn}>
+      <Context.Group.Provider value={groupFn}>
       
+        <ListLayout items={items} groupSelector={groupSelector} sortSelector={sortSelector} inputFilter={inputFilter}>
+          { (item, key) => children(item, key) }
+        </ListLayout>
 
+      </Context.Group.Provider>
+    </Context.Sort.Provider>
+    </Context.Filter.Provider>
 
-
-
-
-{/*       <div className='list-view__body'>
-        {items && items.map(item => children(item))}
-      </div>
- */}
-    </div>
   )
 }
+
 
 
 

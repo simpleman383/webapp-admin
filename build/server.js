@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "fab5651c530048b96805";
+/******/ 	var hotCurrentHash = "fefcdf92af2fbd26d161";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1090,7 +1090,7 @@ var Dropdown = function Dropdown(_ref) {
         setValue = _useState2[1];
   }
 
-  var handleChange = function handleChange(e, data) {
+  var handleChange = function handleChange(e) {
     var value = e.target.value;
 
     if (defaultValue) {
@@ -1364,6 +1364,178 @@ var Layout = function Layout(_ref) {
 
 /***/ }),
 
+/***/ "./src/client/admin/components/list-view/__filter/index.js":
+/*!*****************************************************************!*\
+  !*** ./src/client/admin/components/list-view/__filter/index.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../input */ "./src/client/admin/components/input/index.js");
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-view\\__filter\\index.js";
+
+
+
+
+var InputFilter = function InputFilter(_ref) {
+  var className = _ref.className,
+      _onChange = _ref.onChange;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_input__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()('list-view__filter'),
+    onChange: function onChange(e) {
+      return _onChange(e.target.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (InputFilter);
+
+/***/ }),
+
+/***/ "./src/client/admin/components/list-view/__group/index.js":
+/*!****************************************************************!*\
+  !*** ./src/client/admin/components/list-view/__group/index.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-view\\__group\\index.js";
+
+
+var ListGroup = function ListGroup(_ref) {
+  var items = _ref.items,
+      key = _ref.key,
+      title = _ref.title,
+      children = _ref.children;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    key: key,
+    className: "group list-view__group",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "group__title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    }
+  }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "group__body",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }, items && items.map(function (item, idx) {
+    return children(item, idx);
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ListGroup);
+
+/***/ }),
+
+/***/ "./src/client/admin/components/list-view/__selector/index.js":
+/*!*******************************************************************!*\
+  !*** ./src/client/admin/components/list-view/__selector/index.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../dropdown */ "./src/client/admin/components/dropdown/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-view\\__selector\\index.js";
+
+
+
+
+var Selector = function Selector(_ref) {
+  var options = _ref.options,
+      className = _ref.className,
+      defaultValue = _ref.defaultValue,
+      onChange = _ref.onChange,
+      label = _ref.label;
+
+  var getSelectorFn = function getSelectorFn(key) {
+    return options.find(function (item) {
+      return item.key === key;
+    }) || {};
+  };
+
+  var onSelectorChange = function onSelectorChange(value) {
+    return onChange(getSelectorFn(value).fn);
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_dropdown__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    label: label,
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('selector', className),
+    options: options,
+    defaultValue: defaultValue,
+    onChange: onSelectorChange,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Selector);
+
+/***/ }),
+
+/***/ "./src/client/admin/components/list-view/context.js":
+/*!**********************************************************!*\
+  !*** ./src/client/admin/components/list-view/context.js ***!
+  \**********************************************************/
+/*! exports provided: Group, Filter, Sort */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Group", function() { return Group; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Filter", function() { return Filter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sort", function() { return Sort; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var Group = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({
+  group: function group(x) {
+    return x;
+  }
+});
+var Filter = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({
+  filter: function filter(item, idx) {
+    return true;
+  }
+});
+var Sort = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({
+  sort: function sort(left, right) {
+    return left < right ? -1 : 1;
+  }
+});
+
+
+/***/ }),
+
 /***/ "./src/client/admin/components/list-view/index.js":
 /*!********************************************************!*\
   !*** ./src/client/admin/components/list-view/index.js ***!
@@ -1379,149 +1551,274 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _dropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../dropdown */ "./src/client/admin/components/dropdown/index.js");
-/* harmony import */ var _input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../input */ "./src/client/admin/components/input/index.js");
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./context */ "./src/client/admin/components/list-view/context.js");
+/* harmony import */ var _filter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./__filter */ "./src/client/admin/components/list-view/__filter/index.js");
+/* harmony import */ var _selector__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./__selector */ "./src/client/admin/components/list-view/__selector/index.js");
+/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./layout */ "./src/client/admin/components/list-view/layout.js");
 
 var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-view\\index.js";
 
 
 
 
-var stateType = {
-  ORIGINAL: 'original',
-  FILTERED: 'filtered',
-  GROUPED: 'grouped',
-  SORTED: 'sorted'
-};
 
-var processorDefault = function processorDefault(currentStateType, incomingAction) {
-  return function (items) {
-    return items;
+
+
+var ListView = function ListView(_ref) {
+  var groupOptions = _ref.groupOptions,
+      _ref$groupLabel = _ref.groupLabel,
+      groupLabel = _ref$groupLabel === void 0 ? 'Группировать по:' : _ref$groupLabel,
+      groupKeyDefault = _ref.groupKeyDefault,
+      sortOptions = _ref.sortOptions,
+      _ref$sortLabel = _ref.sortLabel,
+      sortLabel = _ref$sortLabel === void 0 ? 'Упорядочить по:' : _ref$sortLabel,
+      sortKeyDefault = _ref.sortKeyDefault,
+      _ref$items = _ref.items,
+      items = _ref$items === void 0 ? [] : _ref$items,
+      filter = _ref.filter,
+      children = _ref.children;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
+    group: groupOptions[0].fn
+  }),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
+      groupFn = _useState2[0],
+      setGroupFn = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
+    sort: sortOptions[0].fn
+  }),
+      _useState4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState3, 2),
+      sortFn = _useState4[0],
+      setSortFn = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
+    filter: filter(null)
+  }),
+      _useState6 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState5, 2),
+      filterFn = _useState6[0],
+      setFilterFn = _useState6[1];
+
+  var onSelectorChanged = function onSelectorChanged(selectorType, fn) {
+    switch (selectorType) {
+      case 'sort':
+        {
+          setSortFn({
+            sort: fn
+          });
+          break;
+        }
+
+      case 'group':
+        {
+          setGroupFn({
+            group: fn
+          });
+          break;
+        }
+
+      default:
+        break;
+    }
   };
-};
 
-var Selectors = function Selectors(_ref) {
-  var label = _ref.label,
-      type = _ref.type,
-      presets = _ref.presets,
-      _ref$onClick = _ref.onClick,
-      _onClick = _ref$onClick === void 0 ? function () {
-    return null;
-  } : _ref$onClick;
+  var onFilterChanged = function onFilterChanged(filterValue) {
+    setFilterFn({
+      filter: filter(filterValue)
+    });
+  };
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "list-view__".concat(type, "-selectors"),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    }
-  }, label), presets.map(function (item, idx) {
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      key: "label-".concat(idx),
-      onClick: function onClick() {
-        return _onClick(type, item.key);
+  var groupSelector = function groupSelector() {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_selector__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      label: groupLabel,
+      options: groupOptions,
+      defaultValue: groupKeyDefault || groupOptions[0].key,
+      onChange: function onChange(val) {
+        return onSelectorChanged('group', val);
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 53
       }
-    }, item.label);
-  }));
-};
+    });
+  };
 
-var groupPresets = [{
-  type: 'creationDate',
-  label: 'чему-то',
-  reduce: function reduce(items) {}
-}];
+  var sortSelector = function sortSelector() {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_selector__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      label: sortLabel,
+      options: sortOptions,
+      defaultValue: sortKeyDefault || sortOptions[0].key,
+      onChange: function onChange(val) {
+        return onSelectorChanged('sort', val);
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
+      }
+    });
+  };
 
-var DropdownSelector = function DropdownSelector(_ref2) {
-  var className = _ref2.className;
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
-    className: 'dropdown-selector',
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    }
-  });
-};
+  var inputFilter = function inputFilter() {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_filter__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      onChange: function onChange(value) {
+        return onFilterChanged(value);
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      }
+    });
+  };
 
-var ListView = function ListView(_ref3) {
-  var items = _ref3.items,
-      children = _ref3.children;
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
-    type: 'creationDate'
-  }),
-      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
-      groupState = _useState2[0],
-      setGroupState = _useState2[1];
-
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "list-view",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "list-view__control control",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "control__left",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_dropdown__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    defaultValue: "date",
-    label: "\u0413\u0440\u0443\u043F\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u043E",
-    options: [{
-      key: 'name',
-      value: "названию"
-    }, {
-      key: 'date',
-      value: "дате создания"
-    }],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_dropdown__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    label: "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u043E",
-    options: [{
-      key: 'name asc',
-      value: "A-Z"
-    }, {
-      key: 'name desc',
-      value: "Z-A"
-    }],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "control__right",
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_context__WEBPACK_IMPORTED_MODULE_3__["Filter"].Provider, {
+    value: filterFn,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 58
     }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_input__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_context__WEBPACK_IMPORTED_MODULE_3__["Sort"].Provider, {
+    value: sortFn,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
     }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_context__WEBPACK_IMPORTED_MODULE_3__["Group"].Provider, {
+    value: groupFn,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layout__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    items: items,
+    groupSelector: groupSelector,
+    sortSelector: sortSelector,
+    inputFilter: inputFilter,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    }
+  }, function (item, key) {
+    return children(item, key);
   }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ListView);
+
+/***/ }),
+
+/***/ "./src/client/admin/components/list-view/layout.js":
+/*!*********************************************************!*\
+  !*** ./src/client/admin/components/list-view/layout.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "@babel/runtime/helpers/extends");
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./context */ "./src/client/admin/components/list-view/context.js");
+/* harmony import */ var _group__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./__group */ "./src/client/admin/components/list-view/__group/index.js");
+
+var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-view\\layout.js";
+
+
+
+var List = {
+  grouped: function grouped(Layout) {
+    return function (props) {
+      var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context__WEBPACK_IMPORTED_MODULE_2__["Group"]),
+          group = _useContext.group;
+
+      var items = props.items;
+      if (!Array.isArray(items)) return null;
+      var groups = group(items);
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Layout, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, props, {
+        items: groups,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        }
+      }), function (group, key) {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_group__WEBPACK_IMPORTED_MODULE_3__["default"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
+          key: key
+        }, group, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20
+          }
+        }), function (item, key) {
+          return props.children(item, key);
+        });
+      });
+    };
+  },
+  filtered: function filtered(Layout) {
+    return function (props) {
+      var _useContext2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context__WEBPACK_IMPORTED_MODULE_2__["Filter"]),
+          filter = _useContext2.filter;
+
+      var items = props.items;
+      if (!Array.isArray(items)) return null;
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Layout, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, props, {
+        items: items && items.length && items.filter(filter),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        }
+      }));
+    };
+  },
+  sorted: function sorted(Layout) {
+    return function (props) {
+      var _useContext3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context__WEBPACK_IMPORTED_MODULE_2__["Sort"]),
+          sort = _useContext3.sort;
+
+      var items = props.items;
+      if (!Array.isArray(items)) return null;
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Layout, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, props, {
+        items: items && items.length && items.sort(sort),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        }
+      }));
+    };
+  }
+};
+
+var Base = function Base(_ref) {
+  var groupSelector = _ref.groupSelector,
+      sortSelector = _ref.sortSelector,
+      inputFilter = _ref.inputFilter,
+      items = _ref.items,
+      children = _ref.children;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "list-view",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "list-view__options",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    }
+  }, typeof groupSelector === 'function' && groupSelector(), typeof sortSelector === 'function' && sortSelector(), typeof inputFilter === 'function' && inputFilter()), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "list-view__body",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    }
+  }, items && items.map(function (item, idx) {
+    return children(item, idx);
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (List.filtered(List.grouped(List.sorted(Base))));
 
 /***/ }),
 
@@ -1905,16 +2202,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/input */ "./src/client/admin/components/input/index.js");
-/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/header */ "./src/client/admin/components/header/index.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! redux */ "redux");
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _store_glossary_actions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../store/glossary/actions */ "./src/client/admin/store/glossary/actions.js");
-/* harmony import */ var _components_list_view__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/list-view */ "./src/client/admin/components/list-view/index.js");
+/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "@babel/runtime/helpers/toConsumableArray");
+/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/input */ "./src/client/admin/components/input/index.js");
+/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/header */ "./src/client/admin/components/header/index.js");
+/* harmony import */ var _components_dropdown__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/dropdown */ "./src/client/admin/components/dropdown/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! redux */ "redux");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _store_glossary_actions__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../store/glossary/actions */ "./src/client/admin/store/glossary/actions.js");
+/* harmony import */ var _components_list_view__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../components/list-view */ "./src/client/admin/components/list-view/index.js");
+
 
 
 
@@ -1928,33 +2229,113 @@ var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u
 
 
 
-var reducer = {
-  sort: {
-    label: 'Сортировать по:',
-    process: function process(items, type) {
-      switch (type) {
-        case 'title':
-          return items.sort(function (left, right) {
-            return left.title < right.title ? -1 : 1;
-          });
 
-        case 'creationDate':
-          return items.sort(function (left, right) {
-            return left.creationDate < right.creationDate ? -1 : 1;
-          });
-
-        default:
-          return items;
-      }
-    },
-    types: [{
-      key: 'title',
-      label: 'названию'
-    }, {
-      key: 'creationDate',
-      label: 'дате создания'
-    }]
+var sortOptions = [{
+  key: 'title asc',
+  value: 'а - я',
+  fn: function fn(a, b) {
+    return a.title < b.title ? -1 : 1;
   }
+}, {
+  key: 'title desc',
+  value: 'я - а',
+  fn: function fn(a, b) {
+    return a.title > b.title ? -1 : 1;
+  }
+}];
+var groupOptions = [{
+  key: 'alpha',
+  value: 'заголовку',
+  fn: function fn(items) {
+    if (!Array.isArray(items)) return [];
+    var groups = {};
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = items[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var item = _step.value;
+        var firstLetter = item.title[0];
+
+        if (groups[firstLetter]) {
+          groups[firstLetter].push(item);
+        } else {
+          groups[firstLetter] = [item];
+        }
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+          _iterator["return"]();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+
+    return Object.keys(groups).reduce(function (acc, cur) {
+      return [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_5___default()(acc), [{
+        title: cur,
+        items: groups[cur]
+      }]);
+    }, []);
+  }
+}, {
+  key: 'date',
+  value: 'дате',
+  fn: function fn(items) {
+    if (!Array.isArray(items)) return [];
+    var groups = {};
+    var _iteratorNormalCompletion2 = true;
+    var _didIteratorError2 = false;
+    var _iteratorError2 = undefined;
+
+    try {
+      for (var _iterator2 = items[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+        var item = _step2.value;
+        var date = new Date(item.creationDate).toLocaleDateString('ru-RU');
+
+        if (groups[date]) {
+          groups[date].push(item);
+        } else {
+          groups[date] = [item];
+        }
+      }
+    } catch (err) {
+      _didIteratorError2 = true;
+      _iteratorError2 = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion2 && _iterator2["return"] != null) {
+          _iterator2["return"]();
+        }
+      } finally {
+        if (_didIteratorError2) {
+          throw _iteratorError2;
+        }
+      }
+    }
+
+    return Object.keys(groups).reduce(function (acc, cur) {
+      return [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_5___default()(acc), [{
+        title: cur,
+        items: groups[cur]
+      }]);
+    }, []);
+  }
+}];
+
+var filter = function filter(value) {
+  return function (item) {
+    if (typeof value !== 'string' || !value.length) return true;
+    return item.title.toLowerCase().includes(value);
+  };
 };
 
 var GlossaryEditorPage =
@@ -1977,30 +2358,34 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       var previews = this.props.previews;
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "glossary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 110
         }
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_8__["default"], {
         level: 1,
         title: "\u0413\u043B\u043E\u0441\u0441\u0430\u0440\u0438\u0439",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 111
         }
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_list_view__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_list_view__WEBPACK_IMPORTED_MODULE_13__["default"], {
         items: previews,
+        sortOptions: sortOptions,
+        groupOptions: groupOptions,
+        filter: filter,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 113
         }
-      }, function (item) {
-        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+      }, function (item, key) {
+        return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
+          key: key,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 60
+            lineNumber: 114
           }
         }, item.title);
       }));
@@ -2008,11 +2393,11 @@ function (_React$Component) {
   }]);
 
   return GlossaryEditorPage;
-}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_6___default.a.Component);
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  return Object(redux__WEBPACK_IMPORTED_MODULE_9__["bindActionCreators"])({
-    loadArticleList: _store_glossary_actions__WEBPACK_IMPORTED_MODULE_10__["loadArticleList"]
+  return Object(redux__WEBPACK_IMPORTED_MODULE_11__["bindActionCreators"])({
+    loadArticleList: _store_glossary_actions__WEBPACK_IMPORTED_MODULE_12__["loadArticleList"]
   }, dispatch);
 };
 
@@ -2022,7 +2407,7 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])(mapStateToProps, mapDispatchToProps)(GlossaryEditorPage));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_10__["connect"])(mapStateToProps, mapDispatchToProps)(GlossaryEditorPage));
 
 /***/ }),
 
@@ -3391,6 +3776,17 @@ module.exports = require("@babel/runtime/helpers/possibleConstructorReturn");
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/slicedToArray");
+
+/***/ }),
+
+/***/ "@babel/runtime/helpers/toConsumableArray":
+/*!***********************************************************!*\
+  !*** external "@babel/runtime/helpers/toConsumableArray" ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/toConsumableArray");
 
 /***/ }),
 
