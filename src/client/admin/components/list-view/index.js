@@ -7,10 +7,7 @@ import * as Context from './context'
 import Filter from './__filter'
 import Selector from './__selector'
 
-
 import ListLayout from './layout'
-
-
 
 
  
@@ -56,15 +53,15 @@ const ListView = ({
 
   return (
     <Context.Filter.Provider value={filterFn}>
-    <Context.Sort.Provider value={sortFn}>
-      <Context.Group.Provider value={groupFn}>
+      <Context.Sort.Provider value={sortFn}>
+        <Context.Group.Provider value={groupFn}>
       
-        <ListLayout items={items} groupSelector={groupSelector} sortSelector={sortSelector} inputFilter={inputFilter}>
-          { (item, key) => children(item, key) }
-        </ListLayout>
+          <ListLayout items={items} groupSelector={groupSelector} sortSelector={sortSelector} inputFilter={inputFilter}>
+            { (item, idx) => children(item, idx) }
+          </ListLayout>
 
-      </Context.Group.Provider>
-    </Context.Sort.Provider>
+        </Context.Group.Provider>
+      </Context.Sort.Provider>
     </Context.Filter.Provider>
 
   )

@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 import * as Context from './context'
 import ListGroup from './__group'
 
+
 const List = {
   grouped: Layout => (props) => {
     const { group } = useContext(Context.Group)    
@@ -14,11 +15,11 @@ const List = {
     const groups = group(items)    
     
     return (
-      <Layout {...props} items={groups}>
+      <Layout {...props} items={groups || []}>
         { 
-          (group, key) => (
-            <ListGroup key={key} {...group}>
-              { (item, key) => props.children(item, key) }
+          (group, idx) => (
+            <ListGroup key={idx} {...group}>
+              { (item, idx) => props.children(item, idx) }
             </ListGroup>
           ) 
         }
@@ -33,7 +34,7 @@ const List = {
     if (!Array.isArray(items))
       return null
 
-    return <Layout {...props} items={items && items.length && items.filter(filter)} />
+    return <Layout {...props} items={items ? items.filter(filter) : []} />
   },
 
   sorted: Layout => (props) => {    
@@ -43,13 +44,13 @@ const List = {
     if (!Array.isArray(items))
       return null
 
-    return <Layout {...props} items={items && items.length && items.sort(sort)} />
+    return <Layout {...props} items={items ? items.sort(sort) : []} />
   },
 
 }
 
 
-const Base = ({ groupSelector, sortSelector, inputFilter, items, children }) => {
+const MainLayout = ({ groupSelector, sortSelector, inputFilter, items, children }) => {
 
   return (
     <div className='list-view'>
@@ -68,5 +69,24 @@ const Base = ({ groupSelector, sortSelector, inputFilter, items, children }) => 
   )
 }
 
-export default List.filtered(List.grouped(List.sorted( Base )))
+
+const setupPipeline = (ListLayoutComponent, pipeline) => props => {
+
+
+}
+
+
+const setupSearch = (List, handleSearchFn) => (props) => {
+
+  
+  
+  const [ value, setValue ] = useState(null)
+
+  return <List {...props} items={[]} />
+}
+
+
+
+
+export default List.filtered(List.grouped(List.sorted( MainLayout )))
 

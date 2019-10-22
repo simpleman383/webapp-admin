@@ -24,8 +24,6 @@
 .dropdown__label::before {
   content: "";
   background-color: hsla(0,0%,100%,.2);
-  height: 3em;
-  width: 2em;
   display: block;
   position: absolute;
   top: 0;
@@ -33,12 +31,16 @@
   transform: skewX(-45deg) translateX(0);
   transition: none;
   opacity: 0;
+  width : 0;
+  height : 0;
 }
 
 .dropdown__label:hover::before {
-  transition: all 2s ease;
+  transition: left 2s ease;
   opacity: 1;
   left: 125%;
+  height: 3em;
+  width: 2em;
 }
 
 .dropdown__select {
