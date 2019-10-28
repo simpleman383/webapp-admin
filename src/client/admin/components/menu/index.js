@@ -23,6 +23,7 @@ const Menu = ({ enabled, onToggle, onClose }) => {
             <nav className='menu__nav'>
                 <NavLink to='/admin-panel' text='Главная' />
                 <NavLink to='/admin-panel/glossary' text='Глоссарий' />
+                <NavLink to='/admin-panel/test' text='Тестовая' />
 
             </nav>
         </div>

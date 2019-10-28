@@ -26,4 +26,5 @@ GlossaryArticleSchema.plugin(autoIncrement.plugin, {
 const GlossaryArticle = mongoose.model('GlossaryArticle', GlossaryArticleSchema, 'glossaryArticle')
 
 
+
 export default GlossaryArticle;

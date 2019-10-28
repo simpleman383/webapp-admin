@@ -1,6 +1,7 @@
 import { response, error } from '../../utils'
 import repository from '../../repository/glossary'
 
+import apiPreview from './preview'
 
 const api = {
     saveArticle: (req, res) => {
@@ -60,16 +61,9 @@ const api = {
             })
     },  
 
-    getPreviews: (req, res) => {
-        repository.getArticlePreviews()
-            .then(preview => preview.map(preview => preview.toJSON()))
-            .then(previews => {
-                return response.success(res)(previews);
-            })
-            .catch(err => {
-                return response.error(res)(error.DB_ERROR);
-            })
-    }
+    ...apiPreview,
+
+
 
 }
 

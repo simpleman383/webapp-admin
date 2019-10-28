@@ -130,8 +130,6 @@ const setupSearch = (BaseLayout, handleSearch) => props => {
 
 }
 
-const SearchableComponent = setupSearch(BaseLayout, handleSearch);
-
 
 
 const BaseLayout = props => (

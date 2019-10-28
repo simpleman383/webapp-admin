@@ -5,6 +5,7 @@ import Switch from 'react-router-dom/Switch';
 import Dashboard from './containers/dashboard'
 import Glossary from './containers/glossary'
 
+import Test from './containers/test-glossary'
 
 import Layout from './components/layout'
 
@@ -19,6 +20,7 @@ const App = () => (
       <Route exact path="/admin-panel/" component={Dashboard} />
       <Route exact path="/admin-panel/glossary" component={Glossary} />
 
+      <Route exact path="/admin-panel/test" component={Test} />
     </Switch>
   </Layout>
 
