@@ -1,13 +1,29 @@
-import * as type from './actionTypes'
+import { actionTypes as type } from '.'
+
 import backend from '../../services/backend'
 
-export const loadArticleList = () => async (dispatch) => {
-  const previews = await backend.glossary.getArticlePreviews()
+
+export const getArticleList = (filter, group, sort) => async (dispatch) => {
+  const items = await backend.glossary.getArticleList({ filter, group, sort })
 
   dispatch({ 
-    type: type.GLOSSARY_ARTICLE_PREVIEW_LIST_LOAD,
-    previews: previews || []
+    type: type.LOAD_DATA,
+    data: items || []
   })
 
-  
 }
+
+export const handleGroupChange = group => ({
+    type: type.GROUP_KEY_CHANGED,
+    group
+})
+
+export const handleSortChange = sort => ({
+    type: type.SORT_KEY_CHANGED,
+    sort
+})
+
+export const handleFilterChange = filter => ({
+    type: type.FILTER_VALUE_CHANGED,
+    filter
+})

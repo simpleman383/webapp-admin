@@ -4,22 +4,21 @@ import { createReducer, createActionTypes } from '../server-side-processed-list'
 const REDUCER_KEY = 'test-glossary'
 
 
-const utils = (state = {}, action) => state
+const commonPage = (state = {}, action) => state
 
 
 const defaultListState = {
   data: [],
-  pageIndex : 0,
-  pageSize: 10,
-  pageCount: undefined,
-  group: null,
+  group: 'creationDate',
   filter: null,
-  sort: null,
+  sort: 'asc',
 }
 
 
-const data = createReducer(REDUCER_KEY, defaultListState)
+const listView = createReducer(REDUCER_KEY, defaultListState)
 const actionTypes = createActionTypes(REDUCER_KEY)
 
-export default combineReducers(utils, data)
+export default combineReducers({listView})
 export { actionTypes }
+
+

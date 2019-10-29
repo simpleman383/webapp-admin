@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "a6638a9af1f3454600f3";
+/******/ 	var hotCurrentHash = "55f443499f9d555f1efb";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -954,7 +954,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./admin */ "./src/client/admin/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\App.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\App.js";
 
 
 
@@ -1001,14 +1001,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _containers_dashboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/dashboard */ "./src/client/admin/containers/dashboard/index.js");
 /* harmony import */ var _containers_glossary__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./containers/glossary */ "./src/client/admin/containers/glossary/index.js");
-/* harmony import */ var _containers_test_glossary__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./containers/test-glossary */ "./src/client/admin/containers/test-glossary/index.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/layout */ "./src/client/admin/components/layout/index.js");
-/* harmony import */ var _styles_fonts_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./styles/fonts.scss */ "./src/client/admin/styles/fonts.scss");
-/* harmony import */ var _styles_fonts_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_fonts_scss__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _styles_app_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./styles/app.scss */ "./src/client/admin/styles/app.scss");
-/* harmony import */ var _styles_app_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_styles_app_scss__WEBPACK_IMPORTED_MODULE_8__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\App.js";
-
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/layout */ "./src/client/admin/components/layout/index.js");
+/* harmony import */ var _styles_fonts_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/fonts.scss */ "./src/client/admin/styles/fonts.scss");
+/* harmony import */ var _styles_fonts_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_fonts_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _styles_app_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./styles/app.scss */ "./src/client/admin/styles/app.scss");
+/* harmony import */ var _styles_app_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_app_scss__WEBPACK_IMPORTED_MODULE_7__);
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\App.js";
 
 
 
@@ -1019,15 +1017,15 @@ var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u
 
 
 var App = function App() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom_Switch__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom_Route__WEBPACK_IMPORTED_MODULE_1___default.a, {
     exact: true,
@@ -1035,7 +1033,7 @@ var App = function App() {
     component: _containers_dashboard__WEBPACK_IMPORTED_MODULE_3__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom_Route__WEBPACK_IMPORTED_MODULE_1___default.a, {
     exact: true,
@@ -1043,20 +1041,92 @@ var App = function App() {
     component: _containers_glossary__WEBPACK_IMPORTED_MODULE_4__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom_Route__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    exact: true,
-    path: "/admin-panel/test",
-    component: _containers_test_glossary__WEBPACK_IMPORTED_MODULE_5__["default"],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 20
     }
   })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/client/admin/components/article-card/index.js":
+/*!***********************************************************!*\
+  !*** ./src/client/admin/components/article-card/index.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "@babel/runtime/helpers/extends");
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "@babel/runtime/helpers/objectWithoutProperties");
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/article-card/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_3__);
+
+
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\article-card\\index.js";
+
+
+
+var parseDate = function parseDate(date) {
+  if (typeof date !== 'string') return '';
+  return new Date(date).toLocaleDateString();
+};
+
+var ArticleCard = function ArticleCard(_ref) {
+  var title = _ref.title,
+      date = _ref.date,
+      rest = _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1___default()(_ref, ["title", "date"]);
+
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
+    className: "article-card"
+  }, rest, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "article-card__title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    }
+  }, title), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "article-card__date",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    }
+  }, "\u041E\u043F\u0443\u0431\u043B\u0438\u043A\u043E\u0432\u0430\u043D\u043E: "), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    }
+  }, parseDate(date))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ArticleCard);
+
+/***/ }),
+
+/***/ "./src/client/admin/components/article-card/styles.scss":
+/*!**************************************************************!*\
+  !*** ./src/client/admin/components/article-card/styles.scss ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -1078,7 +1148,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/dropdown/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\dropdown\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\dropdown\\index.js";
 
 
 
@@ -1225,7 +1295,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/input/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\input\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\input\\index.js";
 
 
 
@@ -1294,7 +1364,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_5__);
 
 
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\layout\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\layout\\index.js";
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -1374,182 +1444,87 @@ var Layout = function Layout(_ref) {
 
 /***/ }),
 
-/***/ "./src/client/admin/components/list-view/__filter/index.js":
-/*!*****************************************************************!*\
-  !*** ./src/client/admin/components/list-view/__filter/index.js ***!
-  \*****************************************************************/
+/***/ "./src/client/admin/components/list/__group/index.js":
+/*!***********************************************************!*\
+  !*** ./src/client/admin/components/list/__group/index.js ***!
+  \***********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../input */ "./src/client/admin/components/input/index.js");
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-view\\__filter\\index.js";
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "@babel/runtime/helpers/extends");
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "@babel/runtime/helpers/objectWithoutProperties");
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../header */ "./src/client/admin/components/header/index.js");
+/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../__layout */ "./src/client/admin/components/list/__layout/index.js");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/list/__group/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_5__);
+
+
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\list\\__group\\index.js";
 
 
 
 
-var InputFilter = function InputFilter(_ref) {
-  var className = _ref.className,
-      _onChange = _ref.onChange;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_input__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()('list-view__filter'),
-    onChange: function onChange(e) {
-      return _onChange(e.target.value);
-    },
+
+var Group = function Group(_ref) {
+  var title = _ref.title,
+      children = _ref.children,
+      items = _ref.items,
+      _ref$layoutType = _ref.layoutType,
+      layoutType = _ref$layoutType === void 0 ? 'linear' : _ref$layoutType,
+      rest = _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1___default()(_ref, ["title", "children", "items", "layoutType"]);
+
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
+    className: "grouped-items"
+  }, rest, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 9
     }
-  });
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (InputFilter);
-
-/***/ }),
-
-/***/ "./src/client/admin/components/list-view/__group/index.js":
-/*!****************************************************************!*\
-  !*** ./src/client/admin/components/list-view/__group/index.js ***!
-  \****************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-view\\__group\\index.js";
-
-
-var ListGroup = function ListGroup(_ref) {
-  var items = _ref.items,
-      key = _ref.key,
-      title = _ref.title,
-      children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    key: key,
-    className: "group list-view__group",
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_header__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    level: 2,
+    className: "grouped-items__title",
+    title: title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 10
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "group__title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    }
-  }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "group__body",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }, items && items.map(function (item, idx) {
-    return children(item, idx);
-  })));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (ListGroup);
-
-/***/ }),
-
-/***/ "./src/client/admin/components/list-view/__selector/index.js":
-/*!*******************************************************************!*\
-  !*** ./src/client/admin/components/list-view/__selector/index.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../dropdown */ "./src/client/admin/components/dropdown/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-view\\__selector\\index.js";
-
-
-
-
-var Selector = function Selector(_ref) {
-  var options = _ref.options,
-      className = _ref.className,
-      defaultValue = _ref.defaultValue,
-      onChange = _ref.onChange,
-      label = _ref.label;
-
-  var getSelectorFn = function getSelectorFn(key) {
-    return options.find(function (item) {
-      return item.key === key;
-    }) || {};
-  };
-
-  var onSelectorChange = function onSelectorChange(value) {
-    return onChange(getSelectorFn(value).fn);
-  };
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_dropdown__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    label: label,
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('selector', className),
-    options: options,
-    defaultValue: defaultValue,
-    onChange: onSelectorChange,
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    type: layoutType,
+    className: "grouped-items__layout",
+    children: children,
+    items: items,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     }
-  });
+  }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Selector);
+/* harmony default export */ __webpack_exports__["default"] = (Group);
 
 /***/ }),
 
-/***/ "./src/client/admin/components/list-view/context.js":
-/*!**********************************************************!*\
-  !*** ./src/client/admin/components/list-view/context.js ***!
-  \**********************************************************/
-/*! exports provided: Group, Filter, Sort */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./src/client/admin/components/list/__group/styles.scss":
+/*!**************************************************************!*\
+  !*** ./src/client/admin/components/list/__group/styles.scss ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Group", function() { return Group; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Filter", function() { return Filter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sort", function() { return Sort; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-var Group = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({
-  group: function group(x) {
-    return x;
-  }
-});
-var Filter = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({
-  filter: function filter(item, idx) {
-    return true;
-  }
-});
-var Sort = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({
-  sort: function sort(left, right) {
-    return left < right ? -1 : 1;
-  }
-});
 
 
 /***/ }),
 
-/***/ "./src/client/admin/components/list-view/index.js":
-/*!********************************************************!*\
-  !*** ./src/client/admin/components/list-view/index.js ***!
-  \********************************************************/
+/***/ "./src/client/admin/components/list/__layout/index.js":
+/*!************************************************************!*\
+  !*** ./src/client/admin/components/list/__layout/index.js ***!
+  \************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1561,298 +1536,244 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./context */ "./src/client/admin/components/list-view/context.js");
-/* harmony import */ var _filter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./__filter */ "./src/client/admin/components/list-view/__filter/index.js");
-/* harmony import */ var _selector__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./__selector */ "./src/client/admin/components/list-view/__selector/index.js");
-/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./layout */ "./src/client/admin/components/list-view/layout.js");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/list/__layout/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-view\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\list\\__layout\\index.js";
 
 
 
 
+var setLayoutType = function setLayoutType(type) {
+  switch (type) {
+    case 'grid':
+      return 'layout--grid';
 
-
-
-var ListView = function ListView(_ref) {
-  var groupOptions = _ref.groupOptions,
-      _ref$groupLabel = _ref.groupLabel,
-      groupLabel = _ref$groupLabel === void 0 ? 'Группировать по:' : _ref$groupLabel,
-      groupKeyDefault = _ref.groupKeyDefault,
-      sortOptions = _ref.sortOptions,
-      _ref$sortLabel = _ref.sortLabel,
-      sortLabel = _ref$sortLabel === void 0 ? 'Упорядочить по:' : _ref$sortLabel,
-      sortKeyDefault = _ref.sortKeyDefault,
-      _ref$items = _ref.items,
-      items = _ref$items === void 0 ? [] : _ref$items,
-      filter = _ref.filter,
-      children = _ref.children;
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
-    group: groupOptions[0].fn
-  }),
-      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
-      groupFn = _useState2[0],
-      setGroupFn = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
-    sort: sortOptions[0].fn
-  }),
-      _useState4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState3, 2),
-      sortFn = _useState4[0],
-      setSortFn = _useState4[1];
-
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
-    filter: filter(null)
-  }),
-      _useState6 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState5, 2),
-      filterFn = _useState6[0],
-      setFilterFn = _useState6[1];
-
-  var onSelectorChanged = function onSelectorChanged(selectorType, fn) {
-    switch (selectorType) {
-      case 'sort':
-        {
-          setSortFn({
-            sort: fn
-          });
-          break;
-        }
-
-      case 'group':
-        {
-          setGroupFn({
-            group: fn
-          });
-          break;
-        }
-
-      default:
-        break;
-    }
-  };
-
-  var onFilterChanged = function onFilterChanged(filterValue) {
-    setFilterFn({
-      filter: filter(filterValue)
-    });
-  };
-
-  var groupSelector = function groupSelector() {
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_selector__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      label: groupLabel,
-      options: groupOptions,
-      defaultValue: groupKeyDefault || groupOptions[0].key,
-      onChange: function onChange(val) {
-        return onSelectorChanged('group', val);
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
-      }
-    });
-  };
-
-  var sortSelector = function sortSelector() {
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_selector__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      label: sortLabel,
-      options: sortOptions,
-      defaultValue: sortKeyDefault || sortOptions[0].key,
-      onChange: function onChange(val) {
-        return onSelectorChanged('sort', val);
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51
-      }
-    });
-  };
-
-  var inputFilter = function inputFilter() {
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_filter__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      onChange: function onChange(value) {
-        return onFilterChanged(value);
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 52
-      }
-    });
-  };
-
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_context__WEBPACK_IMPORTED_MODULE_3__["Filter"].Provider, {
-    value: filterFn,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_context__WEBPACK_IMPORTED_MODULE_3__["Sort"].Provider, {
-    value: sortFn,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_context__WEBPACK_IMPORTED_MODULE_3__["Group"].Provider, {
-    value: groupFn,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layout__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    items: items,
-    groupSelector: groupSelector,
-    sortSelector: sortSelector,
-    inputFilter: inputFilter,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    }
-  }, function (item, idx) {
-    return children(item, idx);
-  }))));
+    case 'linear':
+    default:
+      return 'layout--linear';
+  }
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ListView);
+var Layout = function Layout(_ref) {
+  var items = _ref.items,
+      type = _ref.type,
+      children = _ref.children,
+      className = _ref.className;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
+      loaded = _useState2[0],
+      setLoaded = _useState2[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    setLoaded(true);
+  }, []);
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('layout', className, setLayoutType(type)),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    }
+  }, items && items.map(function (item, idx) {
+    var delay = idx * .1;
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('layout__item', loaded && 'layout__item--loaded'),
+      style: {
+        transitionDelay: "".concat(delay, "s")
+      },
+      key: idx,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      }
+    }, children(item));
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
 
 /***/ }),
 
-/***/ "./src/client/admin/components/list-view/layout.js":
-/*!*********************************************************!*\
-  !*** ./src/client/admin/components/list-view/layout.js ***!
-  \*********************************************************/
+/***/ "./src/client/admin/components/list/__layout/styles.scss":
+/*!***************************************************************!*\
+  !*** ./src/client/admin/components/list/__layout/styles.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/client/admin/components/list/__options/index.js":
+/*!*************************************************************!*\
+  !*** ./src/client/admin/components/list/__options/index.js ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "@babel/runtime/helpers/slicedToArray");
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "@babel/runtime/helpers/extends");
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./context */ "./src/client/admin/components/list-view/context.js");
-/* harmony import */ var _group__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./__group */ "./src/client/admin/components/list-view/__group/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../input */ "./src/client/admin/components/input/index.js");
+/* harmony import */ var _dropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../dropdown */ "./src/client/admin/components/dropdown/index.js");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/list/__options/styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_4__);
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\list\\__options\\index.js";
 
 
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list-view\\layout.js";
 
 
 
-var List = {
-  grouped: function grouped(Layout) {
-    return function (props) {
-      var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_context__WEBPACK_IMPORTED_MODULE_3__["Group"]),
-          group = _useContext.group;
 
-      var items = props.items;
-      if (!Array.isArray(items)) return null;
-      var groups = group(items);
-      return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Layout, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_1___default()({}, props, {
-        items: groups || [],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        }
-      }), function (group, idx) {
-        return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_group__WEBPACK_IMPORTED_MODULE_4__["default"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_1___default()({
-          key: idx
-        }, group, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 21
-          }
-        }), function (item, idx) {
-          return props.children(item, idx);
-        });
-      });
-    };
-  },
-  filtered: function filtered(Layout) {
-    return function (props) {
-      var _useContext2 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_context__WEBPACK_IMPORTED_MODULE_3__["Filter"]),
-          filter = _useContext2.filter;
-
-      var items = props.items;
-      if (!Array.isArray(items)) return null;
-      return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Layout, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_1___default()({}, props, {
-        items: items ? items.filter(filter) : [],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        }
-      }));
-    };
-  },
-  sorted: function sorted(Layout) {
-    return function (props) {
-      var _useContext3 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_context__WEBPACK_IMPORTED_MODULE_3__["Sort"]),
-          sort = _useContext3.sort;
-
-      var items = props.items;
-      if (!Array.isArray(items)) return null;
-      return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Layout, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_1___default()({}, props, {
-        items: items ? items.sort(sort) : [],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 47
-        }
-      }));
-    };
-  }
-};
-
-var MainLayout = function MainLayout(_ref) {
-  var groupSelector = _ref.groupSelector,
-      sortSelector = _ref.sortSelector,
-      inputFilter = _ref.inputFilter,
-      items = _ref.items,
-      children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "list-view",
+var ListOptions = function ListOptions(_ref) {
+  var className = _ref.className,
+      options = _ref.options,
+      _ref$optionValues = _ref.optionValues,
+      optionValues = _ref$optionValues === void 0 ? {} : _ref$optionValues,
+      onGroupChange = _ref.onGroupChange,
+      onSortChange = _ref.onSortChange,
+      onFilterChange = _ref.onFilterChange;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()('options', className),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 11
     }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "list-view__options",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "options__left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 12
     }
-  }, typeof groupSelector === 'function' && groupSelector(), typeof sortSelector === 'function' && sortSelector(), typeof inputFilter === 'function' && inputFilter()), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "list-view__body",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_dropdown__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    value: optionValues.group,
+    className: "options__group",
+    label: "\u0413\u0440\u0443\u043F\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u043E:",
+    options: options.group,
+    onChange: function onChange(key) {
+      return onGroupChange(key);
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 13
     }
-  }, items && items.map(function (item, idx) {
-    return children(item, idx);
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_dropdown__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    value: optionValues.sort,
+    className: "options__sort",
+    label: "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u043E:",
+    options: options.sort,
+    onChange: function onChange(key) {
+      return onSortChange(key);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "options__right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_input__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    value: optionValues.filter,
+    className: "options__filter",
+    onChange: function onChange(e) {
+      return onFilterChange(e.target.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    }
   })));
 };
 
-var setupPipeline = function setupPipeline(ListLayoutComponent, pipeline) {
-  return function (props) {};
+/* harmony default export */ __webpack_exports__["default"] = (ListOptions);
+
+/***/ }),
+
+/***/ "./src/client/admin/components/list/__options/styles.scss":
+/*!****************************************************************!*\
+  !*** ./src/client/admin/components/list/__options/styles.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/client/admin/components/list/index.js":
+/*!***************************************************!*\
+  !*** ./src/client/admin/components/list/index.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _options__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./__options */ "./src/client/admin/components/list/__options/index.js");
+/* harmony import */ var _group__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./__group */ "./src/client/admin/components/list/__group/index.js");
+/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./__layout */ "./src/client/admin/components/list/__layout/index.js");
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\list\\index.js";
+
+
+
+
+
+
+var List = function List(_ref) {
+  var className = _ref.className,
+      optionValues = _ref.optionValues,
+      options = _ref.options,
+      children = _ref.children,
+      items = _ref.items,
+      _ref$layoutType = _ref.layoutType,
+      layoutType = _ref$layoutType === void 0 ? 'linear' : _ref$layoutType,
+      onGroupChange = _ref.onGroupChange,
+      onSortChange = _ref.onSortChange,
+      onFilterChange = _ref.onFilterChange;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()('list-view', className),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }, options && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_options__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: "list-view__options",
+    optionValues: optionValues,
+    options: options,
+    onGroupChange: onGroupChange,
+    onSortChange: onSortChange,
+    onFilterChange: onFilterChange,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "list-view__layout",
+    type: layoutType,
+    children: children,
+    items: items,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    }
+  }));
 };
 
-var setupSearch = function setupSearch(List, handleSearchFn) {
-  return function (props) {
-    var _useState = useState(null),
-        _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
-        value = _useState2[0],
-        setValue = _useState2[1];
-
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(List, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_1___default()({}, props, {
-      items: [],
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 85
-      }
-    }));
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (List.filtered(List.grouped(List.sorted(MainLayout))));
+List.Layout = _layout__WEBPACK_IMPORTED_MODULE_4__["default"];
+List.Group = _group__WEBPACK_IMPORTED_MODULE_3__["default"];
+/* harmony default export */ __webpack_exports__["default"] = (List);
 
 /***/ }),
 
@@ -1869,7 +1790,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/menu/__close-button/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\menu\\__close-button\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\menu\\__close-button\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
@@ -1912,7 +1833,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/menu/__link/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\menu\\__link\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\menu\\__link\\index.js";
 
 
 
@@ -1963,7 +1884,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/menu/__logo/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\menu\\__logo\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\menu\\__logo\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
@@ -2073,7 +1994,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/menu/__toggle-arrow/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\menu\\__toggle-arrow\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\menu\\__toggle-arrow\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
@@ -2118,7 +2039,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./__link */ "./src/client/admin/components/menu/__link/index.js");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/menu/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\menu\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\components\\menu\\index.js";
 
 
 
@@ -2210,7 +2131,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/layout */ "./src/client/admin/components/layout/index.js");
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\containers\\dashboard\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\containers\\dashboard\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
@@ -2243,358 +2164,236 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "@babel/runtime/helpers/extends");
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "@babel/runtime/helpers/objectWithoutProperties");
-/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "@babel/runtime/helpers/toConsumableArray");
-/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/input */ "./src/client/admin/components/input/index.js");
-/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/header */ "./src/client/admin/components/header/index.js");
-/* harmony import */ var _components_dropdown__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../components/dropdown */ "./src/client/admin/components/dropdown/index.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! redux */ "redux");
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _store_glossary_actions__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../store/glossary/actions */ "./src/client/admin/store/glossary/actions.js");
-/* harmony import */ var _components_list_view__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../components/list-view */ "./src/client/admin/components/list-view/index.js");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "@babel/runtime/helpers/slicedToArray");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! redux */ "redux");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _store_glossary_actions__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../store/glossary/actions */ "./src/client/admin/store/glossary/actions.js");
+/* harmony import */ var _components_list__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/list */ "./src/client/admin/components/list/index.js");
+/* harmony import */ var _components_article_card__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/article-card */ "./src/client/admin/components/article-card/index.js");
 
 
 
 
 
 
-
-
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\containers\\glossary\\index.js";
-
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\containers\\glossary\\index.js";
 
 
 
 
 
 
-
-
-var sortOptions = [{
-  key: 'title asc',
-  value: 'а - я',
-  fn: function fn(a, b) {
-    return a.title < b.title ? -1 : 1;
-  }
-}, {
-  key: 'title desc',
-  value: 'я - а',
-  fn: function fn(a, b) {
-    return a.title > b.title ? -1 : 1;
-  }
-}];
-var groupOptions = [{
-  key: 'alpha',
-  value: 'заголовку',
-  fn: function fn(items) {
-    if (!Array.isArray(items)) return [];
-    var groups = {};
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-      for (var _iterator = items[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var item = _step.value;
-        var firstLetter = item.title[0];
-
-        if (groups[firstLetter]) {
-          groups[firstLetter].push(item);
-        } else {
-          groups[firstLetter] = [item];
-        }
-      }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-          _iterator["return"]();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
-      }
-    }
-
-    return Object.keys(groups).reduce(function (acc, cur) {
-      return [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_7___default()(acc), [{
-        title: cur,
-        items: groups[cur]
-      }]);
-    }, []);
-  }
-}, {
-  key: 'date',
-  value: 'дате',
-  fn: function fn(items) {
-    if (!Array.isArray(items)) return [];
-    var groups = {};
-    var _iteratorNormalCompletion2 = true;
-    var _didIteratorError2 = false;
-    var _iteratorError2 = undefined;
-
-    try {
-      for (var _iterator2 = items[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-        var item = _step2.value;
-        var date = new Date(item.creationDate).toLocaleDateString('ru-RU');
-
-        if (groups[date]) {
-          groups[date].push(item);
-        } else {
-          groups[date] = [item];
-        }
-      }
-    } catch (err) {
-      _didIteratorError2 = true;
-      _iteratorError2 = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion2 && _iterator2["return"] != null) {
-          _iterator2["return"]();
-        }
-      } finally {
-        if (_didIteratorError2) {
-          throw _iteratorError2;
-        }
-      }
-    }
-
-    return Object.keys(groups).reduce(function (acc, cur) {
-      return [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_7___default()(acc), [{
-        title: cur,
-        items: groups[cur]
-      }]);
-    }, []);
-  }
-}];
-
-var filter = function filter(value) {
-  return function (item) {
-    if (typeof value !== 'string' || !value.length) return true;
-    return item.title.toLowerCase().includes(value.toLowerCase());
-  };
+var options = {
+  group: [{
+    key: 'title',
+    value: 'названию'
+  }, {
+    key: 'creationDate',
+    value: 'дате создания'
+  }],
+  sort: [{
+    key: 'asc',
+    value: 'возрастанию'
+  }, {
+    key: 'desc',
+    value: 'убыванию'
+  }]
 };
 
-var addFunctional = function addFunctional(Component, functional) {
-  var FunctionalComponent = Component;
+var formatTitle = function formatTitle(title, groupKey) {
+  switch (groupKey) {
+    case 'creationDate':
+    case 'lastEditDate':
+      {
+        if (title === 'unknown_date') return title;
+        var names = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Ноябрь', 'Декабрь'];
 
-  if (!Component.withFunctionality) {
-    FunctionalComponent = function FunctionalComponent(props) {
-      var functionalControls = props.functionalControls,
-          rest = _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_6___default()(props, ["functionalControls"]);
+        var _title$split = title.split('/'),
+            _title$split2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_5___default()(_title$split, 2),
+            month = _title$split2[0],
+            year = _title$split2[1];
 
-      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "list-view list-view--functional",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 106
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "list-view__options",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 107
-        }
-      }, functionalControls && functionalControls.map(function (control) {
-        return typeof control === 'function' && control();
-      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_5___default()({}, rest, {
-        className: "",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 112
-        }
-      })));
-    };
+        return "".concat(names[month].toLowerCase(), " ").concat(year, " \u0433.");
+      }
+
+    default:
+      return title;
   }
-
-  var OutComponent = function OutComponent(props) {
-    return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(FunctionalComponent, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_5___default()({}, props, {
-      functionalControls: [functional].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_7___default()(props.functionalControls || [])),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 118
-      }
-    }));
-  };
-
-  OutComponent.withFunctionality = true;
-  return OutComponent;
 };
 
-var setupSearch = function setupSearch(BaseLayout, handleSearch) {
-  return function (props) {
-    var searchInput = function searchInput() {
-      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_input__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 125
-        }
-      });
-    };
-
-    var SearchableLayout = addFunctional(BaseLayout, searchInput);
-    return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(SearchableLayout, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 129
-      }
-    });
-  };
-};
-
-var BaseLayout = function BaseLayout(props) {
-  return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-    className: "",
+var Test = function Test(_ref) {
+  var group = _ref.group,
+      filter = _ref.filter,
+      sort = _ref.sort,
+      groups = _ref.items,
+      getArticleList = _ref.getArticleList,
+      handleGroupChange = _ref.handleGroupChange,
+      handleFilterChange = _ref.handleFilterChange,
+      handleSortChange = _ref.handleSortChange;
+  Object(react__WEBPACK_IMPORTED_MODULE_6__["useEffect"])(function () {
+    getArticleList(filter, group, sort);
+  }, [group, filter, sort]);
+  return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+    className: "glossary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 49
     }
-  });
+  }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    items: groups,
+    options: options,
+    onGroupChange: handleGroupChange,
+    onFilterChange: handleFilterChange,
+    onSortChange: handleSortChange,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    }
+  }, function (g) {
+    return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_10__["default"].Group, {
+      items: g.items,
+      title: formatTitle(g.title, group),
+      layoutType: "grid",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 58
+      }
+    }, function (item) {
+      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_article_card__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        title: item.title,
+        date: item.lastEditDate,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        }
+      });
+    });
+  }));
 };
 
-var GlossaryEditorPage =
+var GlossaryContainer =
 /*#__PURE__*/
 function (_React$Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(GlossaryEditorPage, _React$Component);
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(GlossaryContainer, _React$Component);
 
-  function GlossaryEditorPage(props) {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, GlossaryEditorPage);
+  function GlossaryContainer() {
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, GlossaryContainer);
 
-    return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(GlossaryEditorPage).call(this, props));
+    return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(GlossaryContainer).apply(this, arguments));
   }
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(GlossaryEditorPage, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(GlossaryContainer, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.props.loadArticleList();
+      var _this$props = this.props,
+          group = _this$props.group,
+          filter = _this$props.filter,
+          sort = _this$props.sort,
+          getArticleList = _this$props.getArticleList;
+      getArticleList(filter, group, sort);
+    }
+  }, {
+    key: "shouldComponentUpdate",
+    value: function shouldComponentUpdate(nextProps) {
+      var _this$props2 = this.props,
+          group = _this$props2.group,
+          filter = _this$props2.filter,
+          sort = _this$props2.sort,
+          items = _this$props2.items;
+      var nextGroup = nextProps.group,
+          nextFilter = nextProps.filter,
+          nextSort = nextProps.sort,
+          nextItems = nextProps.items;
+      if (items !== nextItems) return true;
+
+      if (group !== nextGroup || filter !== nextFilter || sort !== nextSort) {
+        this.props.getArticleList(nextFilter, nextGroup, nextSort);
+        return false;
+      }
     }
   }, {
     key: "render",
     value: function render() {
-      var previews = this.props.previews;
-      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      var _this$props3 = this.props,
+          group = _this$props3.group,
+          filter = _this$props3.filter,
+          sort = _this$props3.sort,
+          groups = _this$props3.items,
+          getArticleList = _this$props3.getArticleList,
+          handleGroupChange = _this$props3.handleGroupChange,
+          handleFilterChange = _this$props3.handleFilterChange,
+          handleSortChange = _this$props3.handleSortChange;
+      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "glossary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 163
+          lineNumber: 93
         }
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_11__["default"], {
-        level: 1,
-        title: "\u0413\u043B\u043E\u0441\u0441\u0430\u0440\u0438\u0439",
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        items: groups,
+        options: options,
+        optionValues: {
+          group: group,
+          filter: filter,
+          sort: sort
+        },
+        onGroupChange: handleGroupChange,
+        onFilterChange: handleFilterChange,
+        onSortChange: handleSortChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 164
+          lineNumber: 95
         }
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_list_view__WEBPACK_IMPORTED_MODULE_16__["default"], {
-        items: previews,
-        sortOptions: sortOptions,
-        groupOptions: groupOptions,
-        filter: filter,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 167
-        }
-      }, function (item, key) {
-        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
-          key: key,
+      }, function (g) {
+        return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_10__["default"].Group, {
+          items: g.items,
+          title: formatTitle(g.title, group),
+          layoutType: "grid",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 168
+            lineNumber: 103
           }
-        }, item.title);
+        }, function (item) {
+          return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_article_card__WEBPACK_IMPORTED_MODULE_11__["default"], {
+            title: item.title,
+            date: item.lastEditDate,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 104
+            }
+          });
+        });
       }));
     }
   }]);
 
-  return GlossaryEditorPage;
-}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
-
-var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  return Object(redux__WEBPACK_IMPORTED_MODULE_14__["bindActionCreators"])({
-    loadArticleList: _store_glossary_actions__WEBPACK_IMPORTED_MODULE_15__["loadArticleList"]
-  }, dispatch);
-};
+  return GlossaryContainer;
+}(react__WEBPACK_IMPORTED_MODULE_6___default.a.Component);
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    previews: state.glossary.previews
+    group: state.glossary.listView.group,
+    filter: state.glossary.listView.filter,
+    sort: state.glossary.listView.sort,
+    items: state.glossary.listView.data
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_13__["connect"])(mapStateToProps, mapDispatchToProps)(GlossaryEditorPage));
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return Object(redux__WEBPACK_IMPORTED_MODULE_7__["bindActionCreators"])({
+    getArticleList: _store_glossary_actions__WEBPACK_IMPORTED_MODULE_9__["getArticleList"],
+    handleGroupChange: _store_glossary_actions__WEBPACK_IMPORTED_MODULE_9__["handleGroupChange"],
+    handleSortChange: _store_glossary_actions__WEBPACK_IMPORTED_MODULE_9__["handleSortChange"],
+    handleFilterChange: _store_glossary_actions__WEBPACK_IMPORTED_MODULE_9__["handleFilterChange"]
+  }, dispatch);
+};
 
-/***/ }),
-
-/***/ "./src/client/admin/containers/test-glossary/index.js":
-/*!************************************************************!*\
-  !*** ./src/client/admin/containers/test-glossary/index.js ***!
-  \************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Test; });
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "@babel/runtime/helpers/classCallCheck");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "@babel/runtime/helpers/createClass");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "@babel/runtime/helpers/possibleConstructorReturn");
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "@babel/runtime/helpers/getPrototypeOf");
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-
-
-
-
-
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\containers\\test-glossary\\index.js";
-
-
-var Test =
-/*#__PURE__*/
-function (_React$Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(Test, _React$Component);
-
-  function Test() {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, Test);
-
-    return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(Test).apply(this, arguments));
-  }
-
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Test, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 5
-        }
-      }, "Test");
-    }
-  }]);
-
-  return Test;
-}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
-
-
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])(mapStateToProps, mapDispatchToProps)(GlossaryContainer));
 
 /***/ }),
 
@@ -2617,7 +2416,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! redux-thunk */ "redux-thunk");
 /* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(redux_thunk__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _store_reducers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./store/reducers */ "./src/client/admin/store/reducers.js");
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\admin\\index.js";
 
 
 
@@ -2660,23 +2459,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var GlossaryInterface = {
-  getArticlePreviews: function () {
-    var _getArticlePreviews = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(
+  getArticleList: function () {
+    var _getArticleList = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(
     /*#__PURE__*/
-    _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-      var response;
+    _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(options) {
+      var _ref, filter, group, sort, url, response;
+
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              _context.next = 2;
-              return Object(_helpers__WEBPACK_IMPORTED_MODULE_2__["fetch"])('/admin/glossary-previews');
+              _ref = options || {}, filter = _ref.filter, group = _ref.group, sort = _ref.sort;
+              url = new URL('/admin/glossary/previews', window.location.origin);
+              filter && url.searchParams.append('search', filter);
+              group && url.searchParams.append('group', group);
+              sort && url.searchParams.append('sort', sort);
+              _context.next = 7;
+              return Object(_helpers__WEBPACK_IMPORTED_MODULE_2__["fetch"])(url);
 
-            case 2:
+            case 7:
               response = _context.sent;
               return _context.abrupt("return", response.data);
 
-            case 4:
+            case 9:
             case "end":
               return _context.stop();
           }
@@ -2684,11 +2489,11 @@ var GlossaryInterface = {
       }, _callee);
     }));
 
-    function getArticlePreviews() {
-      return _getArticlePreviews.apply(this, arguments);
+    function getArticleList(_x) {
+      return _getArticleList.apply(this, arguments);
     }
 
-    return getArticlePreviews;
+    return getArticleList;
   }(),
   getArticle: function () {
     var _getArticle = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(
@@ -2714,7 +2519,7 @@ var GlossaryInterface = {
       }, _callee2);
     }));
 
-    function getArticle(_x) {
+    function getArticle(_x2) {
       return _getArticle.apply(this, arguments);
     }
 
@@ -2846,60 +2651,53 @@ var backend = {
 
 /***/ }),
 
-/***/ "./src/client/admin/store/glossary/actionTypes.js":
-/*!********************************************************!*\
-  !*** ./src/client/admin/store/glossary/actionTypes.js ***!
-  \********************************************************/
-/*! exports provided: GLOSSARY_ARTICLE_PREVIEW_LIST_LOAD */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GLOSSARY_ARTICLE_PREVIEW_LIST_LOAD", function() { return GLOSSARY_ARTICLE_PREVIEW_LIST_LOAD; });
-var GLOSSARY_ARTICLE_PREVIEW_LIST_LOAD = "GLOSSARY_ARTICLE_PREVIEW_LIST_LOAD";
-
-/***/ }),
-
 /***/ "./src/client/admin/store/glossary/actions.js":
 /*!****************************************************!*\
   !*** ./src/client/admin/store/glossary/actions.js ***!
   \****************************************************/
-/*! exports provided: loadArticleList */
+/*! exports provided: getArticleList, handleGroupChange, handleSortChange, handleFilterChange */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loadArticleList", function() { return loadArticleList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getArticleList", function() { return getArticleList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handleGroupChange", function() { return handleGroupChange; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handleSortChange", function() { return handleSortChange; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handleFilterChange", function() { return handleFilterChange; });
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "@babel/runtime/regenerator");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "@babel/runtime/helpers/asyncToGenerator");
 /* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _actionTypes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./actionTypes */ "./src/client/admin/store/glossary/actionTypes.js");
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! . */ "./src/client/admin/store/glossary/index.js");
 /* harmony import */ var _services_backend__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/backend */ "./src/client/admin/services/backend/index.js");
 
 
 
 
-var loadArticleList = function loadArticleList() {
+var getArticleList = function getArticleList(filter, group, sort) {
   return (
     /*#__PURE__*/
     function () {
       var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(dispatch) {
-        var previews;
+        var items;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return _services_backend__WEBPACK_IMPORTED_MODULE_3__["default"].glossary.getArticlePreviews();
+                return _services_backend__WEBPACK_IMPORTED_MODULE_3__["default"].glossary.getArticleList({
+                  filter: filter,
+                  group: group,
+                  sort: sort
+                });
 
               case 2:
-                previews = _context.sent;
+                items = _context.sent;
                 dispatch({
-                  type: _actionTypes__WEBPACK_IMPORTED_MODULE_2__["GLOSSARY_ARTICLE_PREVIEW_LIST_LOAD"],
-                  previews: previews || []
+                  type: ___WEBPACK_IMPORTED_MODULE_2__["actionTypes"].LOAD_DATA,
+                  data: items || []
                 });
 
               case 4:
@@ -2916,47 +2714,62 @@ var loadArticleList = function loadArticleList() {
     }()
   );
 };
+var handleGroupChange = function handleGroupChange(group) {
+  return {
+    type: ___WEBPACK_IMPORTED_MODULE_2__["actionTypes"].GROUP_KEY_CHANGED,
+    group: group
+  };
+};
+var handleSortChange = function handleSortChange(sort) {
+  return {
+    type: ___WEBPACK_IMPORTED_MODULE_2__["actionTypes"].SORT_KEY_CHANGED,
+    sort: sort
+  };
+};
+var handleFilterChange = function handleFilterChange(filter) {
+  return {
+    type: ___WEBPACK_IMPORTED_MODULE_2__["actionTypes"].FILTER_VALUE_CHANGED,
+    filter: filter
+  };
+};
 
 /***/ }),
 
-/***/ "./src/client/admin/store/glossary/reducer.js":
-/*!****************************************************!*\
-  !*** ./src/client/admin/store/glossary/reducer.js ***!
-  \****************************************************/
-/*! exports provided: default */
+/***/ "./src/client/admin/store/glossary/index.js":
+/*!**************************************************!*\
+  !*** ./src/client/admin/store/glossary/index.js ***!
+  \**************************************************/
+/*! exports provided: default, actionTypes */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "@babel/runtime/helpers/defineProperty");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _glossary_actionTypes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../glossary/actionTypes */ "./src/client/admin/store/glossary/actionTypes.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actionTypes", function() { return actionTypes; });
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "redux");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _server_side_processed_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../server-side-processed-list */ "./src/client/admin/store/server-side-processed-list/index.js");
 
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+var REDUCER_KEY = 'test-glossary';
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-
-var initialState = {
-  previews: []
-};
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+var commonPage = function commonPage() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var action = arguments.length > 1 ? arguments[1] : undefined;
+  return state;
+};
 
-  switch (action.type) {
-    case _glossary_actionTypes__WEBPACK_IMPORTED_MODULE_1__["GLOSSARY_ARTICLE_PREVIEW_LIST_LOAD"]:
-      {
-        return _objectSpread({}, state, {
-          previews: action.previews
-        });
-      }
+var defaultListState = {
+  data: [],
+  group: 'creationDate',
+  filter: null,
+  sort: 'asc'
+};
+var listView = Object(_server_side_processed_list__WEBPACK_IMPORTED_MODULE_1__["createReducer"])(REDUCER_KEY, defaultListState);
+var actionTypes = Object(_server_side_processed_list__WEBPACK_IMPORTED_MODULE_1__["createActionTypes"])(REDUCER_KEY);
+/* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
+  listView: listView
+}));
 
-    default:
-      return state;
-  }
-});
 
 /***/ }),
 
@@ -2969,9 +2782,111 @@ var initialState = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _glossary_reducer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./glossary/reducer */ "./src/client/admin/store/glossary/reducer.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "glossary", function() { return _glossary_reducer__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+/* harmony import */ var _glossary__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./glossary */ "./src/client/admin/store/glossary/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "glossary", function() { return _glossary__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
+
+
+
+/***/ }),
+
+/***/ "./src/client/admin/store/server-side-processed-list/index.js":
+/*!********************************************************************!*\
+  !*** ./src/client/admin/store/server-side-processed-list/index.js ***!
+  \********************************************************************/
+/*! exports provided: createReducer, createActionTypes */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createReducer", function() { return createReducer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createActionTypes", function() { return createActionTypes; });
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "@babel/runtime/helpers/defineProperty");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+var defaultState = {
+  data: [],
+  pageIndex: 0,
+  pageSize: 10,
+  pageCount: undefined,
+  group: null,
+  filter: null,
+  sort: null
+};
+
+var createActionTypes = function createActionTypes(key) {
+  return {
+    LOAD_DATA: "@@SERVER_SIDE_LIST-LOAD_DATA--[".concat(key, "]"),
+    SET_PAGE_SIZE: "@@SERVER_SIDE_LIST-SET_PAGE_SIZE--[".concat(key, "]"),
+    SET_PAGE_IDX: "@@SERVER_SIDE_LIST-SET_PAGE_IDX--[".concat(key, "]"),
+    GROUP_KEY_CHANGED: "@@SERVER_SIDE_LIST-GROUP_KEY_CHANGED--[".concat(key, "]"),
+    SORT_KEY_CHANGED: "@@SERVER_SIDE_LIST-SORT_KEY_CHANGED--[".concat(key, "]"),
+    FILTER_VALUE_CHANGED: "@@SERVER_SIDE_LIST-FILTER_VALUE_CHANGED--[".concat(key, "]")
+  };
+};
+
+var createReducer = function createReducer(key) {
+  var initialState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : defaultState;
+  return function () {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+    var action = arguments.length > 1 ? arguments[1] : undefined;
+    var t = createActionTypes(key);
+
+    switch (action.type) {
+      case t.LOAD_DATA:
+        {
+          return _objectSpread({}, state, {
+            data: action.data
+          });
+        }
+
+      case t.SET_PAGE_SIZE:
+        {
+          return _objectSpread({}, state, {
+            pageSize: action.pageSize
+          });
+        }
+
+      case t.SET_PAGE_IDX:
+        {
+          return _objectSpread({}, state, {
+            pageIndex: action.pageIndex
+          });
+        }
+
+      case t.GROUP_KEY_CHANGED:
+        {
+          return _objectSpread({}, state, {
+            group: action.group
+          });
+        }
+
+      case t.SORT_KEY_CHANGED:
+        {
+          return _objectSpread({}, state, {
+            sort: action.sort
+          });
+        }
+
+      case t.FILTER_VALUE_CHANGED:
+        {
+          return _objectSpread({}, state, {
+            filter: action.filter
+          });
+        }
+
+      default:
+        {
+          return state;
+        }
+    }
+  };
+};
 
 
 
@@ -3012,7 +2927,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\website\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\client\\website\\index.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
@@ -3196,6 +3111,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var groupType = {
+  BY_TITLE: 'title',
+  BY_CREATION_DATE: 'creationdate',
+  BY_LAST_EDIT_DATE: 'lasteditdate'
+};
 var apiPreview = {
   getPreviews: function getPreviews(req, res) {
     var _req$query = req.query,
@@ -3223,26 +3143,34 @@ var apiPreview = {
       }
 
       switch (group.toLowerCase()) {
-        case 'title':
+        case groupType.BY_TITLE:
           {
             return Object(_helpers__WEBPACK_IMPORTED_MODULE_2__["groupItems"])(previews, function (item) {
               return item.title.toLowerCase()[0];
             });
           }
 
-        case 'creationdate':
+        case groupType.BY_CREATION_DATE:
           {
             return Object(_helpers__WEBPACK_IMPORTED_MODULE_2__["groupItems"])(previews, function (item) {
+              if (!item.creationDate) {
+                return 'unknown_date';
+              }
+
               var date = new Date(item.creationDate);
-              return "".concat(date.getDate(), "/").concat(date.getMonth() + 1, "/").concat(date.getFullYear());
+              return "".concat(date.getMonth(), "/").concat(date.getFullYear());
             });
           }
 
-        case 'lasteditdate':
+        case groupType.BY_LAST_EDIT_DATE:
           {
             return Object(_helpers__WEBPACK_IMPORTED_MODULE_2__["groupItems"])(previews, function (item) {
+              if (!item.lastEditDate) {
+                return 'unknown_date';
+              }
+
               var date = new Date(item.lastEditDate);
-              return "".concat(date.getDate(), "/").concat(date.getMonth() + 1, "/").concat(date.getFullYear());
+              return "".concat(date.getMonth(), "/").concat(date.getFullYear());
             });
           }
 
@@ -3597,7 +3525,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./routes */ "./src/server/routes/index.js");
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-dom/server */ "react-dom/server");
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\server\\index.js";
+var _jsxFileName = "C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\src\\server\\index.js";
 
 
 
@@ -3608,7 +3536,7 @@ var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u
 var assets = __webpack_require__(/*! ./build/assets.json */ "./build/assets.json");
 
 var server = express__WEBPACK_IMPORTED_MODULE_3___default()();
-server.disable('x-powered-by').use(express__WEBPACK_IMPORTED_MODULE_3___default.a["static"]("C:\\Users\\simpl\\OneDrive\\Документы\\Node JS Projects\\webapp-admin\\public")).use(_routes__WEBPACK_IMPORTED_MODULE_4__["default"]).get('/*', function (req, res) {
+server.disable('x-powered-by').use(express__WEBPACK_IMPORTED_MODULE_3___default.a["static"]("C:\\Users\\simpl\\Documents\\Node Projects\\webapp-admin\\public")).use(_routes__WEBPACK_IMPORTED_MODULE_4__["default"]).get('/*', function (req, res) {
   var context = {};
   var markup = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_5__["renderToString"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["StaticRouter"], {
     context: context,
@@ -3799,7 +3727,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var router = express__WEBPACK_IMPORTED_MODULE_0___default.a.Router();
-router.get('/glossary-previews', function (req, res) {
+router.get('/glossary/previews', function (req, res) {
   return _api_glossary__WEBPACK_IMPORTED_MODULE_1__["default"].getPreviews(req, res);
 }).get('/glossary', function (req, res) {
   return _api_glossary__WEBPACK_IMPORTED_MODULE_1__["default"].getArticles(req, res);
@@ -3988,7 +3916,7 @@ var response = {
 
 __webpack_require__(/*! razzle-dev-utils/prettyNodeErrors */"razzle-dev-utils/prettyNodeErrors");
 __webpack_require__(/*! webpack/hot/poll?300 */"./node_modules/webpack/hot/poll.js?300");
-module.exports = __webpack_require__(/*! C:\Users\simpl\OneDrive\Документы\Node JS Projects\webapp-admin\src */"./src/index.js");
+module.exports = __webpack_require__(/*! C:\Users\simpl\Documents\Node Projects\webapp-admin\src */"./src/index.js");
 
 
 /***/ }),

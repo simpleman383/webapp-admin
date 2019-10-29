@@ -2,8 +2,15 @@ import { fetch } from '../helpers'
  
 const GlossaryInterface = {
 
-  getArticlePreviews : async () => {
-    const response = await fetch('/admin/glossary-previews')
+  getArticleList : async (options) => {
+    const { filter, group, sort } = options || {}
+
+    const url = new URL('/admin/glossary/previews', window.location.origin)
+    filter && url.searchParams.append('search', filter)
+    group && url.searchParams.append('group', group)
+    sort && url.searchParams.append('sort', sort)
+
+    const response = await fetch(url)
     return response.data;
   },
 

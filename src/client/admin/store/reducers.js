@@ -1,4 +1,4 @@
-import glossary from './glossary/reducer'
+import glossary from './glossary'
 
 export {
   glossary

@@ -1,0 +1,19 @@
+.layout {
+
+}
+
+.layout--grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+}
+
+.layout__item {
+    opacity: 0;
+    transition: opacity 1s ease;
+
+}
+
+.layout__item--loaded {
+    opacity: 1;
+}

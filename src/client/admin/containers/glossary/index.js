@@ -1,183 +1,126 @@
-import React from 'react'
-import cls from 'classnames'
+import React, { useEffect } from 'react'
 
-import Input from '../../components/input'
-import Header from '../../components/header'
-
-import Dropdown from '../../components/dropdown'
-
+import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-
-import { bindActionCreators } from 'redux';
-import { loadArticleList } from '../../store/glossary/actions'
+import { getArticleList, handleGroupChange, handleSortChange, handleFilterChange } from '../../store/glossary/actions'
 
 
-import ListView from '../../components/list-view';
+import ListView from '../../components/list'
+import ArticleCard from '../../components/article-card'
 
+const options = {
+  group: [
+    { key: 'title', value: 'названию' },
+    { key: 'creationDate', value: 'дате создания' },
+  ],
+  sort: [
+    { key: 'asc', value: 'возрастанию' },
+    { key: 'desc', value: 'убыванию' },
+  ],
+}
 
-const sortOptions = [
-	{
-		key: 'title asc',
-		value: 'а - я',
-		fn: (a, b) => a.title < b.title ? -1 : 1
-	}, 
-	{
-		key: 'title desc',
-		value: 'я - а',
-		fn: (a, b) => a.title > b.title ? -1 : 1
-	}
-]
+const formatTitle = (title, groupKey) => {
 
+  switch (groupKey) {
+    case 'creationDate':
+    case 'lastEditDate': {
+      if (title === 'unknown_date')
+        return title
 
-const groupOptions = [
+      const names = [ 'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Ноябрь', 'Декабрь' ]
+      const [ month, year ] = title.split('/')
 
-	{
-		key: 'alpha',
-		value: 'заголовку',
-		fn: items => {
-
-			if (!Array.isArray(items))
-				return []
-	
-			const groups = {}
-			for (let item of items) {
-				const firstLetter = item.title[0]
-
-				if ( groups[firstLetter] ) {
-					groups[firstLetter].push(item)
-				} else {
-					groups[firstLetter] = [ item ]
-				}
-			}
-
-			return Object.keys(groups).reduce((acc, cur) => [...acc, { title: cur, items: groups[cur] } ], [])
-		
-		}
-	},
-
-	{
-		key: 'date',
-		value: 'дате',
-		fn: items => {
-	
-			if (!Array.isArray(items))
-				return []
-
-			const groups = {}
-
-			for (let item of items) {
-				const date = new Date(item.creationDate).toLocaleDateString('ru-RU')
-
-				if ( groups[date] ) {
-					groups[date].push(item)
-				} else {
-					groups[date] = [ item ]
-				}
-			}
-
-			return Object.keys(groups).reduce((acc, cur) => [...acc, { title: cur, items: groups[cur] } ], [])
-		
-		}
-	},
-
-
-]
-
-const filter = value => item => {
-	if (typeof(value) !== 'string' || !value.length) 
-		return true
-
-	return item.title.toLowerCase().includes(value.toLowerCase())
-
+      return `${names[month].toLowerCase()} ${year} г.`
+    }
+    default:
+      return title
+  }
 }
 
 
+const Test = ({ group, filter, sort, items: groups, getArticleList, handleGroupChange, handleFilterChange, handleSortChange }) => {
 
+  useEffect(() => {
+    getArticleList(filter, group, sort)
+  }, [ group, filter, sort ])
 
-const addFunctional = (Component, functional) => {
-
-	let FunctionalComponent = Component
-
-	if (!Component.withFunctionality) {
-		FunctionalComponent = props => {
-			const { functionalControls, ...rest } = props
-			
-			return (
-				<div className='list-view list-view--functional'>
-					<div className='list-view__options'>
-						{ functionalControls && functionalControls.map(control => typeof(control) === 'function' && control() ) }
-					</div>
-
-	
-					<Component {...rest} className='' />
-				</div>
-			)
-		}
-	}
-
-	const OutComponent = props => <FunctionalComponent {...props} functionalControls={[ functional, ...(props.functionalControls || []) ]} />
-	OutComponent.withFunctionality = true
-	return OutComponent
+ 
+  return (
+    <div className='glossary'>
+ 
+      <ListView 
+        items={groups} 
+        options={options}
+        onGroupChange={handleGroupChange} onFilterChange={handleFilterChange} onSortChange={handleSortChange} 
+      >
+        { 
+          g => (
+            <ListView.Group items={g.items} title={formatTitle(g.title, group)} layoutType='grid'>
+              { item => <ArticleCard title={item.title} date={item.lastEditDate} /> }
+            </ListView.Group>
+          ) 
+        }
+      </ListView>
+    </div>
+  )
 }
 
-const setupSearch = (BaseLayout, handleSearch) => props => { 
+class GlossaryContainer extends React.Component {
 
-	const searchInput = () => <Input />
+  componentDidMount() {
+    const { group, filter, sort, getArticleList } = this.props
+    getArticleList(filter, group, sort)
+  }
 
-	const SearchableLayout = addFunctional(BaseLayout, searchInput)
+  shouldComponentUpdate(nextProps) {
+    const { group, filter, sort, items } = this.props
+    const { group: nextGroup, filter: nextFilter, sort: nextSort, items: nextItems } = nextProps
 
-	return <SearchableLayout />
+    if (items !== nextItems)
+      return true
+    
+    if ( group !== nextGroup || filter !== nextFilter || sort !== nextSort ) {
+      this.props.getArticleList(nextFilter, nextGroup, nextSort)
+      return false
+    }
 
+  }
+
+  render() {
+    const { group, filter, sort, items: groups, getArticleList, handleGroupChange, handleFilterChange, handleSortChange } = this.props
+
+    return (
+      <div className='glossary'>
+   
+        <ListView 
+          items={groups} 
+          options={options}
+          optionValues={{ group, filter, sort }}
+          onGroupChange={handleGroupChange} onFilterChange={handleFilterChange} onSortChange={handleSortChange} 
+        >
+          { 
+            g => (
+              <ListView.Group items={g.items} title={formatTitle(g.title, group)} layoutType='grid'>
+                { item => <ArticleCard title={item.title} date={item.lastEditDate} /> }
+              </ListView.Group>
+            ) 
+          }
+        </ListView>
+      </div>
+    )
+  }
 }
 
-
-
-const BaseLayout = props => (
-	<div className=''>
-
-	</div>
-)
-
-
-
-
-
-
-
-
-class GlossaryEditorPage extends React.Component {
-	constructor(props) {
-		super(props)
-	}
-
-	componentDidMount() {
-		this.props.loadArticleList()
-	}
-
-
-	render() {
-
-		const { previews } = this.props
-
-		return (
-			<div className='glossary'>
-				<Header level={1} title='Глоссарий' />
-
-
-				<ListView items={previews} sortOptions={sortOptions} groupOptions={groupOptions} filter={filter}>
-					{ (item, key) => <p key={key}>{item.title}</p> }
-				</ListView>
-			</div>
-		)
-	} 
-}
-
-
-const mapDispatchToProps = dispatch => bindActionCreators({ loadArticleList }, dispatch)
 
 const mapStateToProps = state => ({
-	previews: state.glossary.previews
-
+    group:  state.glossary.listView.group,
+    filter:  state.glossary.listView.filter,
+    sort:  state.glossary.listView.sort,
+    items: state.glossary.listView.data
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(GlossaryEditorPage)
+const mapDispatchToProps = dispatch => bindActionCreators({ getArticleList, handleGroupChange, handleSortChange, handleFilterChange }, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(GlossaryContainer)
+
+

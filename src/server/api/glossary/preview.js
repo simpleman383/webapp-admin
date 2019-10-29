@@ -2,7 +2,14 @@ import { response, error } from '../../utils'
 import repository from '../../repository/glossary'
 import { groupItems } from './helpers'
 
+const groupType = {
+    BY_TITLE: 'title',
+    BY_CREATION_DATE: 'creationdate',
+    BY_LAST_EDIT_DATE: 'lasteditdate',
+}
+
 const apiPreview = {
+
   getPreviews: (req, res) => {
         
     const { search, group, sort } = req.query
@@ -27,19 +34,27 @@ const apiPreview = {
             }
 
             switch (group.toLowerCase()) {
-                case 'title': {
+                case groupType.BY_TITLE: {
                     return groupItems(previews, item => item.title.toLowerCase()[0])  
                 }
-                case 'creationdate': {
+                case groupType.BY_CREATION_DATE: {
                     return groupItems(previews, item => {
+                        if (!item.creationDate) {
+                            return 'unknown_date'
+                        }
+                        
                         const date = new Date(item.creationDate)
-                        return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
+                        return `${date.getMonth() }/${date.getFullYear()}`
                     })  
                 }
-                case 'lasteditdate': {
+                case groupType.BY_LAST_EDIT_DATE: {
                     return groupItems(previews, item => {
+                        if (!item.lastEditDate) {
+                            return 'unknown_date'
+                        }
+
                         const date = new Date(item.lastEditDate)
-                        return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
+                        return `${date.getMonth()}/${date.getFullYear()}`
                     })  
                 }
                 default:

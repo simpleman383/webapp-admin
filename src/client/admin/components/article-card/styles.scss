@@ -1,0 +1,22 @@
+.article-card {
+    font-family: Roboto-Light;
+    padding: 1.5rem 1rem;
+
+}
+
+.article-card:hover {
+    transition: all .3s ease;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #aaa;
+}
+
+.article-card__title {
+    color: black;
+    font-size: 2rem;
+}
+
+.article-card__date {
+    margin-top: 2rem;
+    font-size: .75rem;
+
+}

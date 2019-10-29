@@ -1,0 +1,32 @@
+.options {
+    width: 100%;
+}
+
+.options__left {
+    width: 66%;
+    display: inline-block;
+}
+
+.options__right {
+    width: 33%;
+    display: inline-block;
+    text-align: right;
+}
+
+.options__filter {
+    width: 60%;
+    transition: width .3s ease;
+}
+
+.options__filter:focus {
+    width: 100%;
+}
+
+
+.options__group {
+
+}
+
+.options__sort {
+    margin-left: 3em;
+}

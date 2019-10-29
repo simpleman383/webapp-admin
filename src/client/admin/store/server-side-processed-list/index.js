@@ -11,7 +11,12 @@ const defaultState = {
 const createActionTypes = key => ({
   LOAD_DATA: `@@SERVER_SIDE_LIST-LOAD_DATA--[${key}]`,
   SET_PAGE_SIZE: `@@SERVER_SIDE_LIST-SET_PAGE_SIZE--[${key}]`,
-  SET_PAGE_IDX: `@@SERVER_SIDE_LIST-SET_PAGE_IDX--[${key}]`,  
+  SET_PAGE_IDX: `@@SERVER_SIDE_LIST-SET_PAGE_IDX--[${key}]`,
+
+  GROUP_KEY_CHANGED:  `@@SERVER_SIDE_LIST-GROUP_KEY_CHANGED--[${key}]`,
+  SORT_KEY_CHANGED:  `@@SERVER_SIDE_LIST-SORT_KEY_CHANGED--[${key}]`,
+  FILTER_VALUE_CHANGED:  `@@SERVER_SIDE_LIST-FILTER_VALUE_CHANGED--[${key}]`,
+
 })
 
 const createReducer = (key, initialState = defaultState) => (state = initialState, action) => {
@@ -36,10 +41,28 @@ const createReducer = (key, initialState = defaultState) => (state = initialStat
         pageIndex: action.pageIndex
       }
     }
+    case t.GROUP_KEY_CHANGED: {
+      return {
+        ...state,
+        group: action.group
+      }
+    }
+    case t.SORT_KEY_CHANGED: {
+      return {
+        ...state,
+        sort: action.sort
+      }
+    }
+    case t.FILTER_VALUE_CHANGED: {      
+      return {
+        ...state,
+        filter: action.filter
+      }
+    }
     default: {
       return state
     }
   }
 }
 
-export default { createReducer, createActionTypes }
+export { createReducer, createActionTypes }
