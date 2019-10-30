@@ -69,11 +69,11 @@ const apiPreview = {
 
             switch (sort) {
                 case 'desc' : {
-                    return previews.sort((a, b) => a.title < b.title ? -1 : 1)
+                    return previews.sort((a, b) => a.title < b.title ? 1 : -1)
                 }
                 default:
                 case 'asc' : {
-                    return previews.sort((a, b) => a.title < b.title ? 1 : -1)
+                    return previews.sort((a, b) => a.title < b.title ? -1 : 1)
                 }
             }
         })

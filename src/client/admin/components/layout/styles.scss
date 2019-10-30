@@ -25,10 +25,10 @@
 
 $side-view_size_default: (
     'smartphone': 100%,
-    'tablet_portrait': 250px,
-    'tablet_landscape': 300px,
+    'tablet_portrait': 200px,
+    'tablet_landscape': 250px,
     'laptop': 250px,
-    'desktop': 300px
+    'desktop': 250px
 );
 
 .layout__side-view {
@@ -101,8 +101,8 @@ $side-view_size_default: (
 
     @include for_smartphone { 
         min-width: 270px;
-        max-width: 360px;
-        width: 90%;
+/*         max-width: 360px;
+ */        width: 90%;
     }
 
     width: 90%;

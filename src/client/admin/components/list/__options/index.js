@@ -15,7 +15,7 @@ const ListOptions = ({ className, options, optionValues = {}, onGroupChange, onS
         </div>
   
         <div className='options__right'>
-          <Input value={optionValues.filter} className='options__filter' onChange={e => onFilterChange(e.target.value)} />
+          <Input placeholder="поиск" className='options__filter' onChange={e => onFilterChange(e.target.value)} />
         </div>
       </div>
     )

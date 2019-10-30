@@ -1,32 +1,144 @@
+@import '../../../styles/breakpoints.scss';
+
 .options {
     width: 100%;
 }
 
-.options__left {
-    width: 66%;
-    display: inline-block;
+@include for_smartphone {
+
+    .options {
+        display: flex;
+        flex-direction: column-reverse;    
+    }
+
+    .options__left {
+        width: 100%;
+        display: block;
+    }
+
+    .options__left > *:not(:first-child) {
+        display: block;
+        margin: 1rem 0 0 0;
+    }
+    
+    .options__right {
+        margin-bottom: 1rem ;
+        width: 100%;
+        text-align: left;
+        display: block;
+    }
+
+    .options__filter {
+        width: 100%;
+    }
 }
 
-.options__right {
-    width: 33%;
-    display: inline-block;
-    text-align: right;
+@include for_tablet_portrait {
+    
+    .options {
+        display: flex;
+        flex-direction: column-reverse;    
+    }
+
+    .options__left {
+        width: 100%;
+        display: block;
+    }
+
+    .options__left > *:not(:first-child) {
+        display: block;
+        margin: 1rem 0 0 0;
+    }
+
+    .options__right {
+        margin-bottom: 1rem ;
+        width: 100%;
+        text-align: left;
+        display: block;
+    }
+
+    .options__filter {
+        width: 100%;
+    }
 }
 
-.options__filter {
-    width: 60%;
-    transition: width .3s ease;
+@include for_tablet_landscape {
+    .options {
+        display: flex;
+        flex-direction: column-reverse;    
+    }
+
+    .options__left {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+
+    .options__right {
+        margin-bottom: 1rem ;
+        width: 100%;
+        text-align: left;
+        display: block;
+    }
+
+    .options__sort {
+        margin-left: 2rem;
+    }
+
+    .options__filter {
+        width: 100%;
+    }
 }
 
-.options__filter:focus {
-    width: 100%;
+@include for_laptop {
+    .options__left {
+        width: 65%;
+        display: inline-block;
+    }
+    
+    .options__right {
+        width: 35%;
+        display: inline-block;
+        text-align: right;
+    }
+    
+    .options__filter {
+        width: 60%;
+        transition: width .3s ease;
+    }
+    
+    .options__filter:focus {
+        width: 100%;
+    }
+    
+    .options__sort {
+        margin-left: 3em;
+    }
 }
 
-
-.options__group {
-
+@include for_desktop {
+    .options__left {
+        width: 65%;
+        display: inline-block;
+    }
+    
+    .options__right {
+        width: 35%;
+        display: inline-block;
+        text-align: right;
+    }
+    
+    .options__filter {
+        width: 60%;
+        transition: width .3s ease;
+    }
+    
+    .options__filter:focus {
+        width: 100%;
+    }
+    
+    .options__sort {
+        margin-left: 3em;
+    }
 }
 
-.options__sort {
-    margin-left: 3em;
-}
