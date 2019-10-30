@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "88137e8ad3fa10431455";
+/******/ 	var hotCurrentHash = "16bddc0ef839a44e4121";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1623,12 +1623,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../dropdown */ "./src/client/admin/components/dropdown/index.js");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles.scss */ "./src/client/admin/components/list/__options/styles.scss");
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list\\__options\\index.js";
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\Node JS Projects\\webapp-admin\\src\\client\\admin\\components\\list\\__options\\index.js";
 
 
 
 
 
+
+
+var debounce = function debounce(fn, timeout) {
+  if (!debounce.fn) {
+    var timer = null;
+
+    debounce.fn = function () {
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      if (timer) {
+        clearTimeout(timer);
+      }
+
+      timer = setTimeout(function () {
+        fn.call.apply(fn, [_this].concat(args));
+        timer = null;
+      }, timeout);
+    };
+  }
+
+  return debounce.fn;
+};
 
 var ListOptions = function ListOptions(_ref) {
   var className = _ref.className,
@@ -1638,17 +1663,18 @@ var ListOptions = function ListOptions(_ref) {
       onGroupChange = _ref.onGroupChange,
       onSortChange = _ref.onSortChange,
       onFilterChange = _ref.onFilterChange;
+  var debounceOnFilterChanged = debounce(onFilterChange, 300);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_1___default()('options', className),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 34
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "options__left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 35
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_dropdown__WEBPACK_IMPORTED_MODULE_3__["default"], {
     value: optionValues.group,
@@ -1660,7 +1686,7 @@ var ListOptions = function ListOptions(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 36
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_dropdown__WEBPACK_IMPORTED_MODULE_3__["default"], {
     value: optionValues.sort,
@@ -1672,23 +1698,23 @@ var ListOptions = function ListOptions(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 37
     }
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "options__right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 40
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_input__WEBPACK_IMPORTED_MODULE_2__["default"], {
     placeholder: "\u043F\u043E\u0438\u0441\u043A",
     className: "options__filter",
     onChange: function onChange(e) {
-      return onFilterChange(e.target.value);
+      return debounceOnFilterChanged(e.target.value);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 41
     }
   })));
 };
