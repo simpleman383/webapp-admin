@@ -1,94 +1,93 @@
 @import '../../../styles/breakpoints.scss';
 
-.layout {
-
+.list-layout {
+    margin: 3rem 0 0;
 }
 
-.layout--grid {
+.list-layout--grid {
 
-    .layout__item {
+    .list-layout__item {
         display: inline-block;
         vertical-align: top;
-        overflow: hidden;
     }
 
 
     @include for_smartphone {
-        .layout__item {
+        .list-layout__item {
             width: 100%;
             margin: 1rem 0
         }
     }
 
     @include for_tablet_portrait {
-        .layout__item {
+        .list-layout__item {
             width: 48%;
             margin: 1rem 2%;
         }
 
-        .layout__item:nth-child(2n - 1) {
+        .list-layout__item:nth-child(2n - 1) {
             margin-left: 0;
         }
     
-        .layout__item:nth-child(2n) {
+        .list-layout__item:nth-child(2n) {
             margin-right: 0;
         }  
     }
 
 
     @include for_tablet_landscape {
-        .layout__item {
+        .list-layout__item {
             width: 25%;
             margin: 1rem 6.25%;
         }
 
-        .layout__item:nth-child(3n - 2) {
+        .list-layout__item:nth-child(3n - 2) {
             margin-left: 0;
         }
     
-        .layout__item:nth-child(3n) {
+        .list-layout__item:nth-child(3n) {
             margin-right: 0;
         }  
     }
     
 
     @include for_laptop {
-        .layout__item {
+        .list-layout__item {
             width: 22%;
             margin: 1rem 2%;
         }
 
-        .layout__item:nth-child(4n - 3) {
+        .list-layout__item:nth-child(4n - 3) {
             margin-left: 0;
         }
     
-        .layout__item:nth-child(4n) {
+        .list-layout__item:nth-child(4n) {
             margin-right: 0;
         }   
     }
 
     @include for_desktop {
-        .layout__item {
+        .list-layout__item {
             width: 22%;
             margin: 1rem 2%;
         }
 
-        .layout__item:nth-child(4n - 3) {
+        .list-layout__item:nth-child(4n - 3) {
             margin-left: 0;
         }
     
-        .layout__item:nth-child(4n) {
+        .list-layout__item:nth-child(4n) {
             margin-right: 0;
         }       
     } 
 
 }
 
-.layout__item {
+.list-layout__item {
     opacity: 0;
     transition: opacity 1s ease;
 }
 
-.layout__item--loaded {
+.list-layout__item--loaded {
     opacity: 1;
 }

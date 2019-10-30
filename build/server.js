@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "051585fb0c7180c2e0b2";
+/******/ 	var hotCurrentHash = "88137e8ad3fa10431455";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1547,11 +1547,11 @@ var _jsxFileName = "C:\\Users\\simpl\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u
 var setLayoutType = function setLayoutType(type) {
   switch (type) {
     case 'grid':
-      return 'layout--grid';
+      return 'list-layout--grid';
 
     case 'linear':
     default:
-      return 'layout--linear';
+      return 'list-layout--linear';
   }
 };
 
@@ -1570,7 +1570,7 @@ var Layout = function Layout(_ref) {
     setLoaded(true);
   }, []);
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('layout', className, setLayoutType(type)),
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('list-layout', className, setLayoutType(type)),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
@@ -1578,7 +1578,7 @@ var Layout = function Layout(_ref) {
   }, items && items.map(function (item, idx) {
     var delay = idx * .1;
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('layout__item', loaded && 'layout__item--loaded'),
+      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('list-layout__item', loaded && 'list-layout__item--loaded'),
       style: {
         transitionDelay: "".concat(delay, "s")
       },
@@ -2221,6 +2221,9 @@ var formatTitle = function formatTitle(title, groupKey) {
         return "".concat(names[month].toLowerCase(), " ").concat(year, " \u0433.");
       }
 
+    case 'title':
+      return title.toUpperCase();
+
     default:
       return title;
   }
@@ -2242,7 +2245,7 @@ var Test = function Test(_ref) {
     className: "glossary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 51
     }
   }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_10__["default"], {
     items: groups,
@@ -2252,7 +2255,7 @@ var Test = function Test(_ref) {
     onSortChange: handleSortChange,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 53
     }
   }, function (g) {
     return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_10__["default"].Group, {
@@ -2261,7 +2264,7 @@ var Test = function Test(_ref) {
       layoutType: "grid",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 60
       }
     }, function (item) {
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_article_card__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -2269,7 +2272,7 @@ var Test = function Test(_ref) {
         date: item.lastEditDate,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 61
         }
       });
     });
@@ -2332,7 +2335,7 @@ function (_React$Component) {
         className: "glossary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 95
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_10__["default"], {
         items: groups,
@@ -2347,7 +2350,7 @@ function (_React$Component) {
         onSortChange: handleSortChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 97
         }
       }, function (g) {
         return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_10__["default"].Group, {
@@ -2356,7 +2359,7 @@ function (_React$Component) {
           layoutType: "grid",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 103
+            lineNumber: 105
           }
         }, function (item) {
           return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_article_card__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -2364,7 +2367,7 @@ function (_React$Component) {
             date: item.lastEditDate,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 104
+              lineNumber: 106
             }
           });
         });

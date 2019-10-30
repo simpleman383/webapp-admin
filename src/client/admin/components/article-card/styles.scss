@@ -1,8 +1,11 @@
+@import '../../styles/breakpoints.scss';
+
 .article-card {
     font-family: Roboto-Light;
-    padding: 1.5rem 1rem;
-    text-overflow: ellipsis;
-
+    padding: 1.5rem 1.25rem;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .article-card:hover {
@@ -14,10 +17,20 @@
 .article-card__title {
     color: black;
     font-size: 2rem;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    @include for_smartphone {
+        font-size: 1.5rem;
+    }
 }
 
 .article-card__date {
     margin-top: 2rem;
     font-size: .75rem;
+
+
 
 }

@@ -32,6 +32,8 @@ const formatTitle = (title, groupKey) => {
 
       return `${names[month].toLowerCase()} ${year} г.`
     }
+    case 'title':
+      return title.toUpperCase()
     default:
       return title
   }

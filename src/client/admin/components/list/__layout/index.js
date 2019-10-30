@@ -5,10 +5,10 @@ import './styles.scss'
 const setLayoutType = (type) => {
     switch (type) {
         case 'grid':
-            return 'layout--grid'
+            return 'list-layout--grid'
         case 'linear':
         default:
-            return 'layout--linear'
+            return 'list-layout--linear'
     }
 }
 
@@ -21,13 +21,13 @@ const Layout = ({ items, type, children, className }) => {
     }, [])
 
     return (
-        <div className={cls('layout', className, setLayoutType(type))}>
+        <div className={cls('list-layout', className, setLayoutType(type))}>
         { items && items.map((item, idx) => {
 
             const delay = idx * .1
 
             return (
-                <div className={cls('layout__item', loaded && 'layout__item--loaded')} style={{ transitionDelay: `${delay}s` }} key={idx}>
+                <div className={cls('list-layout__item', loaded && 'list-layout__item--loaded')} style={{ transitionDelay: `${delay}s` }} key={idx}>
                     { children(item) }
                 </div>    
             )
